@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta name="renderer" content="webkit">
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+<meta name="generator" data-variable="5,9,2"/>
+<title>{$arts.title}</title>
+<meta name="keywords" content="{$arts.keywords}" />
+<meta name="description" content="{$arts.description}" />
+<link rel='stylesheet' href='/template/default/skin/css/style.css'>
+<meta name="robots" content="All">
+<link rel="shortcut icon" href="/public/favicon.ico">
+</head>
+<body class="met-navfixed">
+<!-- <div class="load-box"></div> -->
+<!--[if lte IE 8]>
+	<div class="text-center padding-top-50 padding-bottom-50 bg-blue-grey-100">
+	<p class="browserupgrade font-size-18">你正在使用一个<strong>过时</strong>的浏览器。请<a href="http://browsehappy.com/" target="_blank">升级您的浏览器</a>，以提高您的体验。</p>
+	</div>
+<![endif]--> 
+{include file="/default/head"}
+<section class="met-shownews animsition">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-9 met-shownews-body">
+        <div class="row">
+          <div class="met-shownews-header">
+            <h1>{$arts.title}</h1>
+            <div class="info"> <span>{$arts.time|date="Y-m-d H:i",###}</span> <span>{$arts.writer}</span> <span><i class="icon wb-eye margin-right-5" aria-hidden="true"></i>
+              <script src="{dede:field name='phpurl'/}/count.php?view=yes&aid={dede:field name='id'/}&mid={dede:field name='mid'/}" type='text/javascript' language="javascript"></script>
+            </span> </div>
+          </div>
+          <div class="met-editor lazyload clearfix">
+            <div> {$arts.content} </div>
+          </div>
+          <div class="met-shownews-footer">
+            <ul class="pager pager-round">
+
+              <li class="previous "> 
+              {if condition="$pre_info != ''"}
+            
+                <a href="{:url('Article/index',array('aid'=>$pre_info.id))}" title="{$pre_info.title}" class="ellipsis">上一篇：{$pre_info.title}</a>
+            
+            {else /}
+            
+                <a href="#">上一篇：没有了</a>
+            
+            {/if} 
+              </li>
+              <li class="next "> 
+              {if condition="$next_info != ''"}
+            
+                <a href="{:url('Article/index',array('aid'=>$next_info.id))}" title="$next_info.title" class="ellipsis">下一篇：{$next_info.title}</a>
+            
+            {else /}
+            
+                <a href="#">下一篇：没有了</a>
+            
+            {/if} 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="row">
+          <div class="met-news-bar">
+            <form  name="formsearch" action="{:url('Cate/search')}" method="POST">
+              <input type="hidden" name="kwtype" value="0" />
+              <div class="form-group">
+                <div class="input-search">
+                  <button type="submit" class="input-search-btn"><i class="icon wb-search" aria-hidden="true"></i></button>
+                  <input type="text" class="form-control" name="q" placeholder="Search">
+                </div>
+              </div>
+            </form>
+            <div class="recommend news-list-md">
+              <h3>为您推荐</h3>
+              <ul class="list-group list-group-bordered">
+                {volist name="xiangguan" id="vo" offset="0" length="5"} 
+                <li class="list-group-item"><a href="{:url('Article/index',array('aid'=>$vo.id))}" title="{$vo.title}" target='_self'>{$vo.title}</a></li>
+                {/volist}
+              </ul>
+            </div>
+            <ul class="column">
+              {volist name="cateRes" id="cate" offset="1" length="1"}
+              <li><a href="{if condition="$cate['cate_attr'] eq 1"}{:url('Cate/index',array('cid'=>$cate['id']))}{/if}
+    {if condition="$cate['cate_attr'] eq 2"}{:url('Page/index',array('cid'=>$cate['id']))}{/if}
+    {if condition="$cate['cate_attr'] eq 3"}{$cate.link}{/if}" title="所有文章" target='_self'>所有文章</a></li>
+               {volist name="$cate['children']" id='sonCate'}
+                <li><a href="{if condition="$sonCate['cate_attr'] eq 1"}{:url('Cate/index',array('cid'=>$sonCate['id']))}{/if}
+          {if condition="$sonCate['cate_attr'] eq 2"}{:url('Page/index',array('cid'=>$sonCate['id']))}{/if}
+          {if condition="$sonCate['cate_attr'] eq 3"}{$sonCate.link}{/if}"  title="{$sonCate.cate_name}">{$sonCate.cate_name}</a></li>
+               {/volist}
+              {/volist}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{include file="/default/footer"}
+</body>
+</html>

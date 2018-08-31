@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+<!-- Bootstrap -->
+<link href="/template/default/skin/css/bootstrap.min.css" rel="stylesheet">
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="/skin/js/html5shiv.min.js"></script>
+      <script src="/skin/js/respond.min.js"></script>
+    <![endif]-->
+<link href="/template/default/skin/css/style.css" rel="stylesheet">
+<meta name="author" content="order by dzc/" />
+<title>{$cates.title}</title>
+<meta name="keywords" content="{$cates.keywords}" />
+<meta name="description" content="{$cates.desc}" />
+<meta name="robots" content="All">
+<link rel="shortcut icon" href="/favicon.ico">
+</head>
+<body >
+<!--头部 start-->
+
+{include file="/default/head"}
+{include file="/default/banner"}
+<div class="ab_content">
+  <div class="container ">
+    <div class="note_content"> 
+      <div class="row clearfix">
+        {$cates.content}
+      </div>
+    </div>
+  </div>
+</div>
+{include file="/default/footer"}
+<script src="/template/default/skin/js/jquery-1.11.3.min.js" type="text/javascript"></script> 
+<script src="/template/default/skin/js/bootstrap.min.js"></script> 
+<script src="/template/default/skin/js/common.js" type="text/javascript"></script>
+</body>
+</html>

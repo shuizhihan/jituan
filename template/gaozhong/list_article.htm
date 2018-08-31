@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="{dede:global.cfg_soft_lang/}">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+<!-- Bootstrap -->
+<link href="/template/default/skin/css/bootstrap.min.css" rel="stylesheet">
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="/skin/js/html5shiv.min.js"></script>
+      <script src="/skin/js/respond.min.js"></script>
+    <![endif]-->
+<link href="/template/default/skin/css/style.css" rel="stylesheet">
+<meta name="author" content="order by dede58.com/" />
+<title>{$topCates.cate_name}</title>
+<meta name="keywords" content="{$topCates.keywords}" />
+<meta name="description" content="{$topCates.desc}" />
+<meta name="robots" content="All">
+<link rel="shortcut icon" href="/favicon.ico">
+</head>
+<body >
+{include file="/default/head"}
+{include file="/default/banner"}
+<div class="ab_content">
+  <div class="container ">
+    <div class="news_list">
+      <div class="row clearfix">
+       {volist name="artRes" id="art" }
+        <div class="col-xs-6 col-md-4" > <a href="{:url('Article/index',array('aid'=>$art['id']))}">
+          <div class="img"><img src="__INDEX__/uploads/img/{$art.litpic}" alt=""></div>
+          <div class="tt ellipsis">{$art.title}</div>
+          <div class="date">发布日期：{$art.time|date="Y-m-d",###}</div>
+          <p class="towLine">{$art.description|mb_substr=0,100,'utf-8'}</p>
+          <span class="red">详情 >></span> </a> 
+        </div>
+      {/volist}
+        
+
+    </div>
+    <div class="pages"> 
+      <div id="AspNetPager1" class="paginator"> 
+        {$artRes->render()}
+      </div>
+    </div>
+  </div>
+</div>
+{include file="/default/footer"}
+<script src="/template/default/skin/js/jquery-1.11.3.min.js" type="text/javascript"></script> 
+<script src="/template/default/skin/js/bootstrap.min.js"></script> 
+<script src="/template/default/skin/js/common.js" type="text/javascript"></script>
+</body>
+</html>

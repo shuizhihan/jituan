@@ -1,0 +1,2555 @@
+[ 2018-08-15T08:08:54+08:00 ] 0.0.0.0 59.36.119.226 GET /public/index.php
+[ log ] jituan.zhichengsheji.cn/public/index.php [运行时间：0.765625s][吞吐率：1.31req/s] [内存消耗：2,500.87kb] [文件加载：55]
+[ info ] [ LANG ] D:\web\jituan\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_4 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G35 QQ/6.5.3.410 V1_IPH_SQ_6.5.3_1_APP_A Pixel/750 Core/UIWebView NetType/2G Mem/117',
+  'referer' => 'http://jituan.zhichengsheji.cn/',
+  'host' => 'jituan.zhichengsheji.cn',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'deflate, gzip',
+  'accept' => '*/*',
+  'content-length' => '0',
+  'connection' => 'Close',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\web\jituan\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\web\jituan\public/../public/index.htm [ array (
+  0 => 'temp',
+  1 => 'temp_src',
+  2 => 'cateRes',
+  3 => 'botCateRes',
+  4 => 'confs',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_conf` [ RunTime:0.031250s ]
+[ sql ] [ SQL ] SELECT `value` FROM `tp_conf` WHERE  `ename` = 'temp' LIMIT 1 [ RunTime:0.031250s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_cate` [ RunTime:0.109375s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 0  AND `status` = 1 ORDER BY sort desc [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.031250s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 1  AND `status` = 1 ORDER BY sort desc [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 5  AND `status` = 1 ORDER BY sort desc [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 8  AND `status` = 1 ORDER BY sort desc [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.031250s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 13  AND `status` = 1 ORDER BY sort desc [ RunTime:0.015625s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 0  AND `status` = 1  AND `bottom_nav` = 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 1  AND `status` = 1 ORDER BY sort desc [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT `ename`,`value` FROM `tp_conf` [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-08-15T08:09:54+08:00 ] 0.0.0.0 140.207.54.187 GET /public/index.php
+[ log ] jituan.zhichengsheji.cn/public/index.php [运行时间：0.750000s][吞吐率：1.33req/s] [内存消耗：2,331.01kb] [文件加载：53]
+[ info ] [ LANG ] D:\web\jituan\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'referer' => 'http://jituan.zhichengsheji.cn/',
+  'host' => 'jituan.zhichengsheji.cn',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4',
+  'accept' => '*/*',
+  'content-length' => '0',
+  'connection' => 'keep-alive',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\web\jituan\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\web\jituan\public/../public/index.htm [ array (
+  0 => 'temp',
+  1 => 'temp_src',
+  2 => 'cateRes',
+  3 => 'botCateRes',
+  4 => 'confs',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.031250s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_conf` [ RunTime:0.078125s ]
+[ sql ] [ SQL ] SELECT `value` FROM `tp_conf` WHERE  `ename` = 'temp' LIMIT 1 [ RunTime:0.015625s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_cate` [ RunTime:0.046875s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 0  AND `status` = 1 ORDER BY sort desc [ RunTime:0.031250s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 1  AND `status` = 1 ORDER BY sort desc [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 5  AND `status` = 1 ORDER BY sort desc [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 8  AND `status` = 1 ORDER BY sort desc [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 13  AND `status` = 1 ORDER BY sort desc [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 0  AND `status` = 1  AND `bottom_nav` = 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 1  AND `status` = 1 ORDER BY sort desc [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT `ename`,`value` FROM `tp_conf` [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-08-15T09:14:39+08:00 ] 0.0.0.0 115.62.122.117 GET /public/index.php
+[ log ] jituan.zhichengsheji.cn/public/index.php [运行时间：0.812494s][吞吐率：1.23req/s] [内存消耗：2,331.48kb] [文件加载：53]
+[ info ] [ LANG ] D:\web\jituan\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.26 Safari/537.36 Core/1.63.5702.400 QQBrowser/10.2.1893.400',
+  'host' => 'jituan.zhichengsheji.cn',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'content-length' => '0',
+  'connection' => 'keep-alive',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\web\jituan\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\web\jituan\public/../public/index.htm [ array (
+  0 => 'temp',
+  1 => 'temp_src',
+  2 => 'cateRes',
+  3 => 'botCateRes',
+  4 => 'confs',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_conf` [ RunTime:0.078124s ]
+[ sql ] [ SQL ] SELECT `value` FROM `tp_conf` WHERE  `ename` = 'temp' LIMIT 1 [ RunTime:0.031250s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_cate` [ RunTime:0.078125s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 0  AND `status` = 1 ORDER BY sort desc [ RunTime:0.031249s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 1  AND `status` = 1 ORDER BY sort desc [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 5  AND `status` = 1 ORDER BY sort desc [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.031250s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 8  AND `status` = 1 ORDER BY sort desc [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 13  AND `status` = 1 ORDER BY sort desc [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 0  AND `status` = 1  AND `bottom_nav` = 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 1  AND `status` = 1 ORDER BY sort desc [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT `ename`,`value` FROM `tp_conf` [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-08-15T09:15:49+08:00 ] 0.0.0.0 223.166.151.191 GET /public/index.php
+[ log ] jituan.zhichengsheji.cn/public/index.php [运行时间：0.859369s][吞吐率：1.16req/s] [内存消耗：2,330.71kb] [文件加载：53]
+[ info ] [ LANG ] D:\web\jituan\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'host' => 'jituan.zhichengsheji.cn',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4',
+  'accept' => '*/*',
+  'content-length' => '0',
+  'connection' => 'keep-alive',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\web\jituan\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\web\jituan\public/../public/index.htm [ array (
+  0 => 'temp',
+  1 => 'temp_src',
+  2 => 'cateRes',
+  3 => 'botCateRes',
+  4 => 'confs',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_conf` [ RunTime:0.078125s ]
+[ sql ] [ SQL ] SELECT `value` FROM `tp_conf` WHERE  `ename` = 'temp' LIMIT 1 [ RunTime:0.031250s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_cate` [ RunTime:0.078124s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 0  AND `status` = 1 ORDER BY sort desc [ RunTime:0.015625s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 1  AND `status` = 1 ORDER BY sort desc [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 5  AND `status` = 1 ORDER BY sort desc [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 8  AND `status` = 1 ORDER BY sort desc [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 13  AND `status` = 1 ORDER BY sort desc [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 0  AND `status` = 1  AND `bottom_nav` = 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 1  AND `status` = 1 ORDER BY sort desc [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015624s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT `ename`,`value` FROM `tp_conf` [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-08-15T15:22:53+08:00 ] 0.0.0.0 115.62.121.128 GET /public/index.php
+[ log ] jituan.zhichengsheji.cn/public/index.php [运行时间：0.828125s][吞吐率：1.21req/s] [内存消耗：2,331.48kb] [文件加载：53]
+[ info ] [ LANG ] D:\web\jituan\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.101 Safari/537.36',
+  'host' => 'jituan.zhichengsheji.cn',
+  'cookie' => 'safedog-flow-item=',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'content-length' => '0',
+  'connection' => 'keep-alive',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\web\jituan\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\web\jituan\public/../public/index.htm [ array (
+  0 => 'temp',
+  1 => 'temp_src',
+  2 => 'cateRes',
+  3 => 'botCateRes',
+  4 => 'confs',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_conf` [ RunTime:0.093750s ]
+[ sql ] [ SQL ] SELECT `value` FROM `tp_conf` WHERE  `ename` = 'temp' LIMIT 1 [ RunTime:0.031250s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_cate` [ RunTime:0.062500s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 0  AND `status` = 1 ORDER BY sort desc [ RunTime:0.031250s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 1  AND `status` = 1 ORDER BY sort desc [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 5  AND `status` = 1 ORDER BY sort desc [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 8  AND `status` = 1 ORDER BY sort desc [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 13  AND `status` = 1 ORDER BY sort desc [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 0  AND `status` = 1  AND `bottom_nav` = 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 1  AND `status` = 1 ORDER BY sort desc [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT `ename`,`value` FROM `tp_conf` [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-08-15T15:24:07+08:00 ] 0.0.0.0 115.62.121.128 GET /public/index.php
+[ log ] jituan.zhichengsheji.cn/public/index.php [运行时间：0.765625s][吞吐率：1.31req/s] [内存消耗：2,331.48kb] [文件加载：53]
+[ info ] [ LANG ] D:\web\jituan\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.101 Safari/537.36',
+  'host' => 'jituan.zhichengsheji.cn',
+  'cookie' => 'safedog-flow-item=',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'content-length' => '0',
+  'connection' => 'keep-alive',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\web\jituan\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\web\jituan\public/../public/index.htm [ array (
+  0 => 'temp',
+  1 => 'temp_src',
+  2 => 'cateRes',
+  3 => 'botCateRes',
+  4 => 'confs',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_conf` [ RunTime:0.062500s ]
+[ sql ] [ SQL ] SELECT `value` FROM `tp_conf` WHERE  `ename` = 'temp' LIMIT 1 [ RunTime:0.015625s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_cate` [ RunTime:0.046875s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 0  AND `status` = 1 ORDER BY sort desc [ RunTime:0.031250s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.031250s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 1  AND `status` = 1 ORDER BY sort desc [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 5  AND `status` = 1 ORDER BY sort desc [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 8  AND `status` = 1 ORDER BY sort desc [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 13  AND `status` = 1 ORDER BY sort desc [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 0  AND `status` = 1  AND `bottom_nav` = 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.031250s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 1  AND `status` = 1 ORDER BY sort desc [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT `ename`,`value` FROM `tp_conf` [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-08-15T15:24:11+08:00 ] 0.0.0.0 115.62.121.128 GET /public/index.php/admin
+[ log ] jituan.zhichengsheji.cn/public/index.php/admin [运行时间：0.296875s][吞吐率：3.37req/s] [内存消耗：1,363.70kb] [文件加载：48]
+[ info ] [ LANG ] D:\web\jituan\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.101 Safari/537.36',
+  'host' => 'jituan.zhichengsheji.cn',
+  'cookie' => 'safedog-flow-item=',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'content-length' => '0',
+  'connection' => 'keep-alive',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\web\jituan\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-08-15T15:24:14+08:00 ] 0.0.0.0 115.62.121.128 GET /public/index.php/admin/login/index.html
+[ log ] jituan.zhichengsheji.cn/public/index.php/admin/login/index.html [运行时间：0.343750s][吞吐率：2.91req/s] [内存消耗：1,362.96kb] [文件加载：47]
+[ info ] [ LANG ] D:\web\jituan\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.101 Safari/537.36',
+  'referer' => 'http://jituan.zhichengsheji.cn/public/index.php/admin',
+  'host' => 'jituan.zhichengsheji.cn',
+  'cookie' => 'safedog-flow-item=; PHPSESSID=sldt6fn42ka3qdo3iv6d15gvv0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'content-length' => '0',
+  'connection' => 'keep-alive',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ D:\web\jituan\application\admin\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\web\jituan\public/../application/admin\view\login\index.htm [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-08-15T15:24:15+08:00 ] 0.0.0.0 115.62.121.128 GET /public/index.php/captcha.html
+[ log ] jituan.zhichengsheji.cn/public/index.php/captcha.html [运行时间：0.328125s][吞吐率：3.05req/s] [内存消耗：1,132.41kb] [文件加载：38]
+[ info ] [ LANG ] D:\web\jituan\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.101 Safari/537.36',
+  'referer' => 'http://jituan.zhichengsheji.cn/public/index.php/admin/login/index.html',
+  'host' => 'jituan.zhichengsheji.cn',
+  'cookie' => 'safedog-flow-item=; PHPSESSID=sldt6fn42ka3qdo3iv6d15gvv0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'content-length' => '0',
+  'connection' => 'keep-alive',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\web\jituan\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-08-15T15:24:18+08:00 ] 0.0.0.0 115.62.121.128 POST /public/index.php/admin/login/index.html
+[ log ] jituan.zhichengsheji.cn/public/index.php/admin/login/index.html [运行时间：0.546875s][吞吐率：1.83req/s] [内存消耗：2,200.77kb] [文件加载：57]
+[ info ] [ LANG ] D:\web\jituan\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://jituan.zhichengsheji.cn',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.101 Safari/537.36',
+  'referer' => 'http://jituan.zhichengsheji.cn/public/index.php/admin/login/index.html',
+  'host' => 'jituan.zhichengsheji.cn',
+  'cookie' => 'safedog-flow-item=; PHPSESSID=sldt6fn42ka3qdo3iv6d15gvv0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '38',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+  'uname' => 'admin',
+  'password' => '8486226',
+  'code' => '8689',
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ D:\web\jituan\application\admin\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\web\jituan\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.062500s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `uname` = 'admin' LIMIT 1 [ RunTime:0.015625s ]
+
+---------------------------------------------------------------
+[ 2018-08-15T15:24:21+08:00 ] 0.0.0.0 115.62.121.128 GET /public/index.php/admin/index/index.html
+[ log ] jituan.zhichengsheji.cn/public/index.php/admin/index/index.html [运行时间：0.609375s][吞吐率：1.64req/s] [内存消耗：1,958.64kb] [文件加载：55]
+[ info ] [ LANG ] D:\web\jituan\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.101 Safari/537.36',
+  'referer' => 'http://jituan.zhichengsheji.cn/public/index.php/admin/login/index.html',
+  'host' => 'jituan.zhichengsheji.cn',
+  'cookie' => 'safedog-flow-item=; PHPSESSID=sldt6fn42ka3qdo3iv6d15gvv0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'content-length' => '0',
+  'connection' => 'keep-alive',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\web\jituan\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\web\jituan\public/../application/admin\view\index\index.htm [ array (
+  0 => 'con',
+  1 => 'name',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.031250s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_conf` [ RunTime:0.062500s ]
+[ sql ] [ SQL ] SELECT `ename`,`value` FROM `tp_conf` [ RunTime:0.046875s ]
+
+---------------------------------------------------------------
+[ 2018-08-15T15:24:27+08:00 ] 0.0.0.0 115.62.121.128 GET /public/index.php/admin/adpos/lst.html
+[ log ] jituan.zhichengsheji.cn/public/index.php/admin/adpos/lst.html [运行时间：0.734375s][吞吐率：1.36req/s] [内存消耗：2,080.22kb] [文件加载：58]
+[ info ] [ LANG ] D:\web\jituan\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'adpos',
+    2 => 'lst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.101 Safari/537.36',
+  'referer' => 'http://jituan.zhichengsheji.cn/public/index.php/admin/index/index.html',
+  'host' => 'jituan.zhichengsheji.cn',
+  'cookie' => 'safedog-flow-item=; PHPSESSID=sldt6fn42ka3qdo3iv6d15gvv0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'content-length' => '0',
+  'connection' => 'keep-alive',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Adpos->lst[ D:\web\jituan\application\admin\controller\Adpos.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\web\jituan\public/../application/admin\view\adpos\list.htm [ array (
+  0 => 'con',
+  1 => 'name',
+  2 => 'adposRes',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_conf` [ RunTime:0.062500s ]
+[ sql ] [ SQL ] SELECT `ename`,`value` FROM `tp_conf` [ RunTime:0.015625s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_adpos` [ RunTime:0.093750s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_adpos` LIMIT 1 [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_adpos` LIMIT 0,2 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-08-15T15:24:29+08:00 ] 0.0.0.0 115.62.121.128 GET /public/index.php/admin/ad/lst.html
+[ log ] jituan.zhichengsheji.cn/public/index.php/admin/ad/lst.html [运行时间：0.640625s][吞吐率：1.56req/s] [内存消耗：2,093.77kb] [文件加载：58]
+[ info ] [ LANG ] D:\web\jituan\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ad',
+    2 => 'lst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.101 Safari/537.36',
+  'referer' => 'http://jituan.zhichengsheji.cn/public/index.php/admin/adpos/lst.html',
+  'host' => 'jituan.zhichengsheji.cn',
+  'cookie' => 'safedog-flow-item=; PHPSESSID=sldt6fn42ka3qdo3iv6d15gvv0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'content-length' => '0',
+  'connection' => 'keep-alive',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Ad->lst[ D:\web\jituan\application\admin\controller\Ad.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\web\jituan\public/../application/admin\view\ad\list.htm [ array (
+  0 => 'con',
+  1 => 'name',
+  2 => 'adRes',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_conf` [ RunTime:0.078125s ]
+[ sql ] [ SQL ] SELECT `ename`,`value` FROM `tp_conf` [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_ad` [ RunTime:0.062500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_ad` `a` INNER JOIN `tp_adpos` `b` ON `a`.`adpos_id`=`b`.`id` LIMIT 1 [ RunTime:0.031250s ]
+[ sql ] [ SQL ] SELECT `a`.*,`b`.`name` FROM `tp_ad` `a` INNER JOIN `tp_adpos` `b` ON `a`.`adpos_id`=`b`.`id` LIMIT 0,6 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-08-15T15:24:37+08:00 ] 0.0.0.0 115.62.121.128 GET /public/index.php/admin/ad/edit/id/76.html
+[ log ] jituan.zhichengsheji.cn/public/index.php/admin/ad/edit/id/76.html [运行时间：1.296875s][吞吐率：0.77req/s] [内存消耗：2,044.05kb] [文件加载：55]
+[ info ] [ LANG ] D:\web\jituan\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ad',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.101 Safari/537.36',
+  'referer' => 'http://jituan.zhichengsheji.cn/public/index.php/admin/ad/lst.html',
+  'host' => 'jituan.zhichengsheji.cn',
+  'cookie' => 'safedog-flow-item=; PHPSESSID=sldt6fn42ka3qdo3iv6d15gvv0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'content-length' => '0',
+  'connection' => 'keep-alive',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '76',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Ad->edit[ D:\web\jituan\application\admin\controller\Ad.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\web\jituan\public/../application/admin\view\ad\edit.htm [ array (
+  0 => 'con',
+  1 => 'name',
+  2 => 'adflashRes',
+  3 => 'ad',
+  4 => 'adposRes',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_conf` [ RunTime:0.234375s ]
+[ sql ] [ SQL ] SELECT `ename`,`value` FROM `tp_conf` [ RunTime:0.078125s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.031250s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_adpos` [ RunTime:0.156250s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `tp_adpos` [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_ad` [ RunTime:0.109375s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_ad` WHERE  `id` = 76 LIMIT 1 [ RunTime:0.015625s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_adflash` [ RunTime:0.093750s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_adflash` WHERE  `ad_id` = 76 [ RunTime:0.015625s ]
+
+---------------------------------------------------------------
+[ 2018-08-15T15:24:55+08:00 ] 0.0.0.0 115.62.121.128 POST /public/index.php/admin/ad/ajaxdel.html
+[ log ] jituan.zhichengsheji.cn/public/index.php/admin/ad/ajaxdel.html [运行时间：0.625000s][吞吐率：1.60req/s] [内存消耗：2,003.78kb] [文件加载：55]
+[ info ] [ LANG ] D:\web\jituan\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ad',
+    2 => 'ajaxdel',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://jituan.zhichengsheji.cn',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.101 Safari/537.36',
+  'referer' => 'http://jituan.zhichengsheji.cn/public/index.php/admin/ad/edit/id/76.html',
+  'host' => 'jituan.zhichengsheji.cn',
+  'cookie' => 'safedog-flow-item=; PHPSESSID=sldt6fn42ka3qdo3iv6d15gvv0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'content-length' => '5',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'id' => '86',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Ad->ajaxdel[ D:\web\jituan\application\admin\controller\Ad.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_conf` [ RunTime:0.078125s ]
+[ sql ] [ SQL ] SELECT `ename`,`value` FROM `tp_conf` [ RunTime:0.015625s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_adflash` [ RunTime:0.062500s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_adflash` WHERE  `id` = 86 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] DELETE FROM `tp_adflash`    WHERE  `id` = 86 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-08-15T15:25:22+08:00 ] 0.0.0.0 115.62.121.128 POST /public/index.php/admin/ad/edit/id/76.html
+[ log ] jituan.zhichengsheji.cn/public/index.php/admin/ad/edit/id/76.html [运行时间：1.015632s][吞吐率：0.98req/s] [内存消耗：2,450.91kb] [文件加载：62]
+[ info ] [ LANG ] D:\web\jituan\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ad',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://jituan.zhichengsheji.cn',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.101 Safari/537.36',
+  'referer' => 'http://jituan.zhichengsheji.cn/public/index.php/admin/ad/edit/id/76.html',
+  'host' => 'jituan.zhichengsheji.cn',
+  'cookie' => 'safedog-flow-item=; PHPSESSID=sldt6fn42ka3qdo3iv6d15gvv0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryrE5pwF8KUjuqrFER',
+  'content-length' => '1349742',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+  'id' => '76',
+  'oldimgsrc' => '',
+  'type' => '2',
+  'adpos_id' => '8',
+  'ad_name' => '轮播图',
+  'on' => '1',
+  'link' => '',
+  'old_flink' => 
+  array (
+    85 => '',
+    76 => '',
+    84 => '',
+  ),
+  'flink' => 
+  array (
+    0 => '',
+    1 => '',
+  ),
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Ad->edit[ D:\web\jituan\application\admin\controller\Ad.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\web\jituan\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'con',
+  1 => 'name',
+  2 => 'code',
+  3 => 'msg',
+  4 => 'data',
+  5 => 'url',
+  6 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_conf` [ RunTime:0.078125s ]
+[ sql ] [ SQL ] SELECT `ename`,`value` FROM `tp_conf` [ RunTime:0.187501s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015626s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_ad` [ RunTime:0.078125s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tp_ad` WHERE  `ad_name` = '轮播图'  AND `id` <> 76 LIMIT 1 [ RunTime:0.015625s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_adflash` [ RunTime:0.046875s ]
+[ sql ] [ SQL ] INSERT INTO `tp_adflash` (`ad_id` , `fimg_src` , `flink`) VALUES (76 , '20180815\\ac509f93913656c8453e3d5dd3acc09f.jpg' , '') [ RunTime:0.015625s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] INSERT INTO `tp_adflash` (`ad_id` , `fimg_src` , `flink`) VALUES (76 , '20180815\\2c650575ff899de3170606a58ca6a09a.jpg' , '') [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015626s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] UPDATE `tp_adflash`  SET `flink`=''  WHERE  `id` = 85 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] UPDATE `tp_adflash`  SET `flink`=''  WHERE  `id` = 76 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] UPDATE `tp_adflash`  SET `flink`=''  WHERE  `id` = 84 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] UPDATE `tp_ad`  SET `type`=2,`adpos_id`=8,`ad_name`='轮播图',`on`=1,`link`=''  WHERE  `id` = 76 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-08-15T15:25:26+08:00 ] 0.0.0.0 115.62.121.128 GET /public/index.php/admin/ad/lst.html
+[ log ] jituan.zhichengsheji.cn/public/index.php/admin/ad/lst.html [运行时间：0.515625s][吞吐率：1.94req/s] [内存消耗：2,093.79kb] [文件加载：58]
+[ info ] [ LANG ] D:\web\jituan\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ad',
+    2 => 'lst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.101 Safari/537.36',
+  'referer' => 'http://jituan.zhichengsheji.cn/public/index.php/admin/ad/edit/id/76.html',
+  'host' => 'jituan.zhichengsheji.cn',
+  'cookie' => 'safedog-flow-item=; PHPSESSID=sldt6fn42ka3qdo3iv6d15gvv0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'content-length' => '0',
+  'connection' => 'keep-alive',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Ad->lst[ D:\web\jituan\application\admin\controller\Ad.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\web\jituan\public/../application/admin\view\ad\list.htm [ array (
+  0 => 'con',
+  1 => 'name',
+  2 => 'adRes',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.031250s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_conf` [ RunTime:0.062500s ]
+[ sql ] [ SQL ] SELECT `ename`,`value` FROM `tp_conf` [ RunTime:0.015625s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.031250s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_ad` [ RunTime:0.046875s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_ad` `a` INNER JOIN `tp_adpos` `b` ON `a`.`adpos_id`=`b`.`id` LIMIT 1 [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `a`.*,`b`.`name` FROM `tp_ad` `a` INNER JOIN `tp_adpos` `b` ON `a`.`adpos_id`=`b`.`id` LIMIT 0,6 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-08-15T15:26:24+08:00 ] 0.0.0.0 115.62.121.128 GET /public/index.php/admin/ad/edit/id/77.html
+[ log ] jituan.zhichengsheji.cn/public/index.php/admin/ad/edit/id/77.html [运行时间：0.671875s][吞吐率：1.49req/s] [内存消耗：2,044.07kb] [文件加载：55]
+[ info ] [ LANG ] D:\web\jituan\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ad',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.101 Safari/537.36',
+  'referer' => 'http://jituan.zhichengsheji.cn/public/index.php/admin/ad/lst.html',
+  'host' => 'jituan.zhichengsheji.cn',
+  'cookie' => 'safedog-flow-item=; PHPSESSID=sldt6fn42ka3qdo3iv6d15gvv0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'content-length' => '0',
+  'connection' => 'keep-alive',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '77',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Ad->edit[ D:\web\jituan\application\admin\controller\Ad.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\web\jituan\public/../application/admin\view\ad\edit.htm [ array (
+  0 => 'con',
+  1 => 'name',
+  2 => 'adflashRes',
+  3 => 'ad',
+  4 => 'adposRes',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_conf` [ RunTime:0.062500s ]
+[ sql ] [ SQL ] SELECT `ename`,`value` FROM `tp_conf` [ RunTime:0.015625s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_adpos` [ RunTime:0.078125s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `tp_adpos` [ RunTime:0.031250s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_ad` [ RunTime:0.031250s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_ad` WHERE  `id` = 77 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_adflash` [ RunTime:0.062500s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_adflash` WHERE  `ad_id` = 77 [ RunTime:0.015625s ]
+
+---------------------------------------------------------------
+[ 2018-08-15T15:26:28+08:00 ] 0.0.0.0 115.62.121.128 POST /public/index.php/admin/ad/ajaxdel.html
+[ log ] jituan.zhichengsheji.cn/public/index.php/admin/ad/ajaxdel.html [运行时间：0.593754s][吞吐率：1.68req/s] [内存消耗：2,003.78kb] [文件加载：55]
+[ info ] [ LANG ] D:\web\jituan\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ad',
+    2 => 'ajaxdel',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://jituan.zhichengsheji.cn',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.101 Safari/537.36',
+  'referer' => 'http://jituan.zhichengsheji.cn/public/index.php/admin/ad/edit/id/77.html',
+  'host' => 'jituan.zhichengsheji.cn',
+  'cookie' => 'safedog-flow-item=; PHPSESSID=sldt6fn42ka3qdo3iv6d15gvv0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'content-length' => '5',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'id' => '87',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Ad->ajaxdel[ D:\web\jituan\application\admin\controller\Ad.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_conf` [ RunTime:0.046876s ]
+[ sql ] [ SQL ] SELECT `ename`,`value` FROM `tp_conf` [ RunTime:0.031250s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_adflash` [ RunTime:0.062500s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_adflash` WHERE  `id` = 87 LIMIT 1 [ RunTime:0.015626s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] DELETE FROM `tp_adflash`    WHERE  `id` = 87 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-08-15T15:27:00+08:00 ] 0.0.0.0 115.62.121.128 POST /public/index.php/admin/ad/edit/id/77.html
+[ log ] jituan.zhichengsheji.cn/public/index.php/admin/ad/edit/id/77.html [运行时间：0.968750s][吞吐率：1.03req/s] [内存消耗：2,450.99kb] [文件加载：62]
+[ info ] [ LANG ] D:\web\jituan\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ad',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://jituan.zhichengsheji.cn',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.101 Safari/537.36',
+  'referer' => 'http://jituan.zhichengsheji.cn/public/index.php/admin/ad/edit/id/77.html',
+  'host' => 'jituan.zhichengsheji.cn',
+  'cookie' => 'safedog-flow-item=; PHPSESSID=sldt6fn42ka3qdo3iv6d15gvv0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryPL40k7C9kTKVCisS',
+  'content-length' => '18031',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+  'id' => '77',
+  'oldimgsrc' => '',
+  'type' => '2',
+  'adpos_id' => '10',
+  'ad_name' => '首页轮播缩略图',
+  'on' => '1',
+  'link' => '',
+  'old_flink' => 
+  array (
+    81 => '',
+    83 => '',
+    88 => '',
+  ),
+  'flink' => 
+  array (
+    0 => '',
+    1 => '',
+  ),
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Ad->edit[ D:\web\jituan\application\admin\controller\Ad.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\web\jituan\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'con',
+  1 => 'name',
+  2 => 'code',
+  3 => 'msg',
+  4 => 'data',
+  5 => 'url',
+  6 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.031250s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_conf` [ RunTime:0.046875s ]
+[ sql ] [ SQL ] SELECT `ename`,`value` FROM `tp_conf` [ RunTime:0.015625s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_ad` [ RunTime:0.093750s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tp_ad` WHERE  `ad_name` = '首页轮播缩略图'  AND `id` <> 77 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_adflash` [ RunTime:0.046875s ]
+[ sql ] [ SQL ] INSERT INTO `tp_adflash` (`ad_id` , `fimg_src` , `flink`) VALUES (77 , '20180815\\33d7efdf6f2f1b0554ff5cdb306712f6.jpg' , '') [ RunTime:0.031250s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.031250s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] INSERT INTO `tp_adflash` (`ad_id` , `fimg_src` , `flink`) VALUES (77 , '20180815\\dfefdb75f774bdb0f629bee20ed72da8.jpg' , '') [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] UPDATE `tp_adflash`  SET `flink`=''  WHERE  `id` = 81 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] UPDATE `tp_adflash`  SET `flink`=''  WHERE  `id` = 83 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] UPDATE `tp_adflash`  SET `flink`=''  WHERE  `id` = 88 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] UPDATE `tp_ad`  SET `type`=2,`adpos_id`=10,`ad_name`='首页轮播缩略图',`on`=1,`link`=''  WHERE  `id` = 77 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-08-15T15:27:04+08:00 ] 0.0.0.0 115.62.121.128 GET /public/index.php/admin/ad/lst.html
+[ log ] jituan.zhichengsheji.cn/public/index.php/admin/ad/lst.html [运行时间：0.843750s][吞吐率：1.19req/s] [内存消耗：2,093.79kb] [文件加载：58]
+[ info ] [ LANG ] D:\web\jituan\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ad',
+    2 => 'lst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.101 Safari/537.36',
+  'referer' => 'http://jituan.zhichengsheji.cn/public/index.php/admin/ad/edit/id/77.html',
+  'host' => 'jituan.zhichengsheji.cn',
+  'cookie' => 'safedog-flow-item=; PHPSESSID=sldt6fn42ka3qdo3iv6d15gvv0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'content-length' => '0',
+  'connection' => 'keep-alive',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Ad->lst[ D:\web\jituan\application\admin\controller\Ad.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\web\jituan\public/../application/admin\view\ad\list.htm [ array (
+  0 => 'con',
+  1 => 'name',
+  2 => 'adRes',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_conf` [ RunTime:0.078125s ]
+[ sql ] [ SQL ] SELECT `ename`,`value` FROM `tp_conf` [ RunTime:0.046875s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_ad` [ RunTime:0.125000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_ad` `a` INNER JOIN `tp_adpos` `b` ON `a`.`adpos_id`=`b`.`id` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `a`.*,`b`.`name` FROM `tp_ad` `a` INNER JOIN `tp_adpos` `b` ON `a`.`adpos_id`=`b`.`id` LIMIT 0,6 [ RunTime:0.031250s ]
+
+---------------------------------------------------------------
+[ 2018-08-15T15:27:04+08:00 ] 0.0.0.0 115.62.121.128 GET /public/index.php
+[ log ] jituan.zhichengsheji.cn/public/index.php [运行时间：0.890625s][吞吐率：1.12req/s] [内存消耗：2,331.88kb] [文件加载：53]
+[ info ] [ LANG ] D:\web\jituan\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.101 Safari/537.36',
+  'host' => 'jituan.zhichengsheji.cn',
+  'cookie' => 'safedog-flow-item=; PHPSESSID=sldt6fn42ka3qdo3iv6d15gvv0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'content-length' => '0',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\web\jituan\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\web\jituan\public/../public/index.htm [ array (
+  0 => 'temp',
+  1 => 'temp_src',
+  2 => 'cateRes',
+  3 => 'botCateRes',
+  4 => 'confs',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.031250s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_conf` [ RunTime:0.109375s ]
+[ sql ] [ SQL ] SELECT `value` FROM `tp_conf` WHERE  `ename` = 'temp' LIMIT 1 [ RunTime:0.031250s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.031250s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_cate` [ RunTime:0.109375s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 0  AND `status` = 1 ORDER BY sort desc [ RunTime:0.046875s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 1  AND `status` = 1 ORDER BY sort desc [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 5  AND `status` = 1 ORDER BY sort desc [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 8  AND `status` = 1 ORDER BY sort desc [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 13  AND `status` = 1 ORDER BY sort desc [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 0  AND `status` = 1  AND `bottom_nav` = 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 1  AND `status` = 1 ORDER BY sort desc [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT `ename`,`value` FROM `tp_conf` [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-08-15T15:27:53+08:00 ] 0.0.0.0 115.62.121.128 GET /public/index.php
+[ log ] jituan.zhichengsheji.cn/public/index.php [运行时间：1.156250s][吞吐率：0.86req/s] [内存消耗：3,024.37kb] [文件加载：56]
+[ info ] [ LANG ] D:\web\jituan\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.101 Safari/537.36',
+  'host' => 'jituan.zhichengsheji.cn',
+  'cookie' => 'safedog-flow-item=; PHPSESSID=sldt6fn42ka3qdo3iv6d15gvv0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'content-length' => '0',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\web\jituan\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ../template/default/index.htm [ array (
+  0 => 'temp',
+  1 => 'temp_src',
+  2 => 'cateRes',
+  3 => 'botCateRes',
+  4 => 'confs',
+  5 => 'topcid',
+  6 => 'about',
+  7 => 'service',
+  8 => 'news',
+  9 => 'proRes',
+  10 => 'adStr',
+  11 => 'img_Res',
+  12 => 'xinwen',
+  13 => 'jiaoyu',
+  14 => 'jituan_cates',
+  15 => 'jituan_abouts',
+) ]
+[ info ] [ VIEW ] ../template/default/index.htm [ array (
+  0 => 'temp',
+  1 => 'temp_src',
+  2 => 'cateRes',
+  3 => 'botCateRes',
+  4 => 'confs',
+  5 => 'topcid',
+  6 => 'about',
+  7 => 'service',
+  8 => 'news',
+  9 => 'proRes',
+  10 => 'adStr',
+  11 => 'img_Res',
+  12 => 'xinwen',
+  13 => 'jiaoyu',
+  14 => 'jituan_cates',
+  15 => 'jituan_abouts',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_conf` [ RunTime:0.062500s ]
+[ sql ] [ SQL ] SELECT `value` FROM `tp_conf` WHERE  `ename` = 'temp' LIMIT 1 [ RunTime:0.062500s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_cate` [ RunTime:0.062500s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 0  AND `status` = 1 ORDER BY sort desc [ RunTime:0.015625s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 1  AND `status` = 1 ORDER BY sort desc [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 5  AND `status` = 1 ORDER BY sort desc [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 8  AND `status` = 1 ORDER BY sort desc [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 13  AND `status` = 1 ORDER BY sort desc [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 0  AND `status` = 1  AND `bottom_nav` = 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 1  AND `status` = 1 ORDER BY sort desc [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT `ename`,`value` FROM `tp_conf` [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_archives` [ RunTime:0.062500s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_archives` WHERE  `cate_id` IN (5,6,7) ORDER BY time desc [ RunTime:0.031250s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_archives` WHERE  `cate_id` = 11 ORDER BY id desc [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `id` = 20 ORDER BY id desc [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT `content` FROM `tp_cate` WHERE  `id` = 8 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_archives` WHERE  `cate_id` = 5 ORDER BY id desc LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_archives` WHERE  `cate_id` IN (0,9,10) ORDER BY click desc LIMIT 10 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_ad` [ RunTime:0.046875s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_ad` WHERE  `adpos_id` IN (8,10)  AND `on` = 1 [ RunTime:0.015625s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_adflash` [ RunTime:0.078125s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_adflash` WHERE  `ad_id` = 76 [ RunTime:0.015625s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_adflash` WHERE  `ad_id` = 77 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 8 ORDER BY sort desc [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 1 ORDER BY sort desc [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-08-15T15:28:29+08:00 ] 0.0.0.0 101.91.62.109 GET /public/index.php
+[ log ] jituan.zhichengsheji.cn/public/index.php [运行时间：0.640625s][吞吐率：1.56req/s] [内存消耗：2,501.43kb] [文件加载：55]
+[ info ] [ LANG ] D:\web\jituan\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_4 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G35 QQ/6.5.3.410 V1_IPH_SQ_6.5.3_1_APP_A Pixel/750 Core/UIWebView NetType/2G Mem/117',
+  'referer' => 'http://jituan.zhichengsheji.cn/',
+  'host' => 'jituan.zhichengsheji.cn',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'deflate, gzip',
+  'accept' => '*/*',
+  'content-length' => '0',
+  'connection' => 'Close',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\web\jituan\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\web\jituan\public/../public/index.htm [ array (
+  0 => 'temp',
+  1 => 'temp_src',
+  2 => 'cateRes',
+  3 => 'botCateRes',
+  4 => 'confs',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_conf` [ RunTime:0.046875s ]
+[ sql ] [ SQL ] SELECT `value` FROM `tp_conf` WHERE  `ename` = 'temp' LIMIT 1 [ RunTime:0.015625s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_cate` [ RunTime:0.062500s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 0  AND `status` = 1 ORDER BY sort desc [ RunTime:0.015625s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 1  AND `status` = 1 ORDER BY sort desc [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 5  AND `status` = 1 ORDER BY sort desc [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 8  AND `status` = 1 ORDER BY sort desc [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 13  AND `status` = 1 ORDER BY sort desc [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 0  AND `status` = 1  AND `bottom_nav` = 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 1  AND `status` = 1 ORDER BY sort desc [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT `ename`,`value` FROM `tp_conf` [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-08-15T15:28:40+08:00 ] 0.0.0.0 115.62.121.128 GET /public/index.php
+[ log ] jituan.zhichengsheji.cn/public/index.php [运行时间：0.656250s][吞吐率：1.52req/s] [内存消耗：2,331.73kb] [文件加载：53]
+[ info ] [ LANG ] D:\web\jituan\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.26 Safari/537.36 Core/1.63.5702.400 QQBrowser/10.2.1893.400',
+  'host' => 'jituan.zhichengsheji.cn',
+  'cookie' => 'safedog-flow-item=',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'content-length' => '0',
+  'connection' => 'keep-alive',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\web\jituan\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\web\jituan\public/../public/index.htm [ array (
+  0 => 'temp',
+  1 => 'temp_src',
+  2 => 'cateRes',
+  3 => 'botCateRes',
+  4 => 'confs',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_conf` [ RunTime:0.078125s ]
+[ sql ] [ SQL ] SELECT `value` FROM `tp_conf` WHERE  `ename` = 'temp' LIMIT 1 [ RunTime:0.015625s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_cate` [ RunTime:0.031250s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 0  AND `status` = 1 ORDER BY sort desc [ RunTime:0.031250s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 1  AND `status` = 1 ORDER BY sort desc [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 5  AND `status` = 1 ORDER BY sort desc [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 8  AND `status` = 1 ORDER BY sort desc [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 13  AND `status` = 1 ORDER BY sort desc [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 0  AND `status` = 1  AND `bottom_nav` = 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 1  AND `status` = 1 ORDER BY sort desc [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT `ename`,`value` FROM `tp_conf` [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-08-15T15:29:47+08:00 ] 0.0.0.0 58.247.212.207 GET /public/index.php
+[ log ] jituan.zhichengsheji.cn/public/index.php [运行时间：0.734375s][吞吐率：1.36req/s] [内存消耗：2,330.73kb] [文件加载：53]
+[ info ] [ LANG ] D:\web\jituan\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'host' => 'jituan.zhichengsheji.cn',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4',
+  'accept' => '*/*',
+  'content-length' => '0',
+  'connection' => 'keep-alive',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\web\jituan\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\web\jituan\public/../public/index.htm [ array (
+  0 => 'temp',
+  1 => 'temp_src',
+  2 => 'cateRes',
+  3 => 'botCateRes',
+  4 => 'confs',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_conf` [ RunTime:0.078125s ]
+[ sql ] [ SQL ] SELECT `value` FROM `tp_conf` WHERE  `ename` = 'temp' LIMIT 1 [ RunTime:0.015625s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_cate` [ RunTime:0.078125s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 0  AND `status` = 1 ORDER BY sort desc [ RunTime:0.031250s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 1  AND `status` = 1 ORDER BY sort desc [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 5  AND `status` = 1 ORDER BY sort desc [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 8  AND `status` = 1 ORDER BY sort desc [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 13  AND `status` = 1 ORDER BY sort desc [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 0  AND `status` = 1  AND `bottom_nav` = 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 1  AND `status` = 1 ORDER BY sort desc [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT `ename`,`value` FROM `tp_conf` [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-08-15T15:29:49+08:00 ] 0.0.0.0 140.207.118.16 GET /public/index.php
+[ log ] jituan.zhichengsheji.cn/public/index.php [运行时间：0.625000s][吞吐率：1.60req/s] [内存消耗：2,330.71kb] [文件加载：53]
+[ info ] [ LANG ] D:\web\jituan\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'host' => 'jituan.zhichengsheji.cn',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4',
+  'accept' => '*/*',
+  'content-length' => '0',
+  'connection' => 'keep-alive',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\web\jituan\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\web\jituan\public/../public/index.htm [ array (
+  0 => 'temp',
+  1 => 'temp_src',
+  2 => 'cateRes',
+  3 => 'botCateRes',
+  4 => 'confs',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_conf` [ RunTime:0.062500s ]
+[ sql ] [ SQL ] SELECT `value` FROM `tp_conf` WHERE  `ename` = 'temp' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_cate` [ RunTime:0.046875s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 0  AND `status` = 1 ORDER BY sort desc [ RunTime:0.015625s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 1  AND `status` = 1 ORDER BY sort desc [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 5  AND `status` = 1 ORDER BY sort desc [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 8  AND `status` = 1 ORDER BY sort desc [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 13  AND `status` = 1 ORDER BY sort desc [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 0  AND `status` = 1  AND `bottom_nav` = 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 1  AND `status` = 1 ORDER BY sort desc [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT `ename`,`value` FROM `tp_conf` [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-08-15T15:42:29+08:00 ] 0.0.0.0 115.62.121.128 GET /public/index.php
+[ log ] jituan.zhichengsheji.cn/public/index.php [运行时间：0.640625s][吞吐率：1.56req/s] [内存消耗：2,332.01kb] [文件加载：53]
+[ info ] [ LANG ] D:\web\jituan\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.26 Safari/537.36 Core/1.63.5702.400 QQBrowser/10.2.1893.400',
+  'host' => 'jituan.zhichengsheji.cn',
+  'cookie' => 'safedog-flow-item=',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'content-length' => '0',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\web\jituan\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\web\jituan\public/../public/index.htm [ array (
+  0 => 'temp',
+  1 => 'temp_src',
+  2 => 'cateRes',
+  3 => 'botCateRes',
+  4 => 'confs',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_conf` [ RunTime:0.078125s ]
+[ sql ] [ SQL ] SELECT `value` FROM `tp_conf` WHERE  `ename` = 'temp' LIMIT 1 [ RunTime:0.046875s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_cate` [ RunTime:0.046875s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 0  AND `status` = 1 ORDER BY sort desc [ RunTime:0.015625s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 1  AND `status` = 1 ORDER BY sort desc [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 5  AND `status` = 1 ORDER BY sort desc [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 8  AND `status` = 1 ORDER BY sort desc [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 13  AND `status` = 1 ORDER BY sort desc [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 0  AND `status` = 1  AND `bottom_nav` = 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 1  AND `status` = 1 ORDER BY sort desc [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT `ename`,`value` FROM `tp_conf` [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-08-15T15:42:38+08:00 ] 0.0.0.0 115.62.121.128 GET /public/index.php/admin/ad/edit/id/76.html
+[ log ] jituan.zhichengsheji.cn/public/index.php/admin/ad/edit/id/76.html [运行时间：1.046875s][吞吐率：0.96req/s] [内存消耗：2,048.81kb] [文件加载：55]
+[ info ] [ LANG ] D:\web\jituan\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ad',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.101 Safari/537.36',
+  'referer' => 'http://jituan.zhichengsheji.cn/public/index.php/admin/ad/lst.html',
+  'host' => 'jituan.zhichengsheji.cn',
+  'cookie' => 'safedog-flow-item=; PHPSESSID=sldt6fn42ka3qdo3iv6d15gvv0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'content-length' => '0',
+  'connection' => 'keep-alive',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '76',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Ad->edit[ D:\web\jituan\application\admin\controller\Ad.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\web\jituan\public/../application/admin\view\ad\edit.htm [ array (
+  0 => 'con',
+  1 => 'name',
+  2 => 'adflashRes',
+  3 => 'ad',
+  4 => 'adposRes',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_conf` [ RunTime:0.062500s ]
+[ sql ] [ SQL ] SELECT `ename`,`value` FROM `tp_conf` [ RunTime:0.015625s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_adpos` [ RunTime:0.078125s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `tp_adpos` [ RunTime:0.156250s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.031250s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_ad` [ RunTime:0.156250s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_ad` WHERE  `id` = 76 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_adflash` [ RunTime:0.046875s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_adflash` WHERE  `ad_id` = 76 [ RunTime:0.015625s ]
+
+---------------------------------------------------------------
+[ 2018-08-15T15:42:46+08:00 ] 0.0.0.0 115.62.121.128 POST /public/index.php/admin/ad/ajaxdel.html
+[ log ] jituan.zhichengsheji.cn/public/index.php/admin/ad/ajaxdel.html [运行时间：0.656250s][吞吐率：1.52req/s] [内存消耗：2,003.78kb] [文件加载：55]
+[ info ] [ LANG ] D:\web\jituan\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ad',
+    2 => 'ajaxdel',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://jituan.zhichengsheji.cn',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.101 Safari/537.36',
+  'referer' => 'http://jituan.zhichengsheji.cn/public/index.php/admin/ad/edit/id/76.html',
+  'host' => 'jituan.zhichengsheji.cn',
+  'cookie' => 'safedog-flow-item=; PHPSESSID=sldt6fn42ka3qdo3iv6d15gvv0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'content-length' => '5',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'id' => '89',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Ad->ajaxdel[ D:\web\jituan\application\admin\controller\Ad.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_conf` [ RunTime:0.062500s ]
+[ sql ] [ SQL ] SELECT `ename`,`value` FROM `tp_conf` [ RunTime:0.015625s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_adflash` [ RunTime:0.062500s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_adflash` WHERE  `id` = 89 LIMIT 1 [ RunTime:0.031250s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] DELETE FROM `tp_adflash`    WHERE  `id` = 89 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-08-15T15:42:49+08:00 ] 0.0.0.0 115.62.121.128 POST /public/index.php/admin/ad/ajaxdel.html
+[ log ] jituan.zhichengsheji.cn/public/index.php/admin/ad/ajaxdel.html [运行时间：0.593750s][吞吐率：1.68req/s] [内存消耗：2,003.78kb] [文件加载：55]
+[ info ] [ LANG ] D:\web\jituan\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ad',
+    2 => 'ajaxdel',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://jituan.zhichengsheji.cn',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.101 Safari/537.36',
+  'referer' => 'http://jituan.zhichengsheji.cn/public/index.php/admin/ad/edit/id/76.html',
+  'host' => 'jituan.zhichengsheji.cn',
+  'cookie' => 'safedog-flow-item=; PHPSESSID=sldt6fn42ka3qdo3iv6d15gvv0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'content-length' => '5',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'id' => '90',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Ad->ajaxdel[ D:\web\jituan\application\admin\controller\Ad.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_conf` [ RunTime:0.093750s ]
+[ sql ] [ SQL ] SELECT `ename`,`value` FROM `tp_conf` [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_adflash` [ RunTime:0.062500s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_adflash` WHERE  `id` = 90 LIMIT 1 [ RunTime:0.015625s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] DELETE FROM `tp_adflash`    WHERE  `id` = 90 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-08-15T15:43:08+08:00 ] 0.0.0.0 115.62.121.128 POST /public/index.php/admin/ad/ajaxdel.html
+[ log ] jituan.zhichengsheji.cn/public/index.php/admin/ad/ajaxdel.html [运行时间：0.546875s][吞吐率：1.83req/s] [内存消耗：2,003.78kb] [文件加载：55]
+[ info ] [ LANG ] D:\web\jituan\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ad',
+    2 => 'ajaxdel',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://jituan.zhichengsheji.cn',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.101 Safari/537.36',
+  'referer' => 'http://jituan.zhichengsheji.cn/public/index.php/admin/ad/edit/id/76.html',
+  'host' => 'jituan.zhichengsheji.cn',
+  'cookie' => 'safedog-flow-item=; PHPSESSID=sldt6fn42ka3qdo3iv6d15gvv0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'content-length' => '5',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'id' => '84',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Ad->ajaxdel[ D:\web\jituan\application\admin\controller\Ad.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_conf` [ RunTime:0.062500s ]
+[ sql ] [ SQL ] SELECT `ename`,`value` FROM `tp_conf` [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_adflash` [ RunTime:0.078125s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_adflash` WHERE  `id` = 84 LIMIT 1 [ RunTime:0.015625s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] DELETE FROM `tp_adflash`    WHERE  `id` = 84 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-08-15T15:43:18+08:00 ] 0.0.0.0 115.62.121.128 POST /public/index.php/admin/ad/edit/id/76.html
+[ log ] jituan.zhichengsheji.cn/public/index.php/admin/ad/edit/id/76.html [运行时间：1.015625s][吞吐率：0.98req/s] [内存消耗：2,434.80kb] [文件加载：62]
+[ info ] [ LANG ] D:\web\jituan\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ad',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://jituan.zhichengsheji.cn',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.101 Safari/537.36',
+  'referer' => 'http://jituan.zhichengsheji.cn/public/index.php/admin/ad/edit/id/76.html',
+  'host' => 'jituan.zhichengsheji.cn',
+  'cookie' => 'safedog-flow-item=; PHPSESSID=sldt6fn42ka3qdo3iv6d15gvv0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryMrvqtMyemVOuQZBB',
+  'content-length' => '868203',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+  'id' => '76',
+  'oldimgsrc' => '',
+  'type' => '2',
+  'adpos_id' => '8',
+  'ad_name' => '轮播图',
+  'on' => '1',
+  'link' => '',
+  'old_flink' => 
+  array (
+    85 => '',
+    76 => '',
+  ),
+  'flink' => 
+  array (
+    0 => '',
+    1 => '',
+  ),
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Ad->edit[ D:\web\jituan\application\admin\controller\Ad.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\web\jituan\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'con',
+  1 => 'name',
+  2 => 'code',
+  3 => 'msg',
+  4 => 'data',
+  5 => 'url',
+  6 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_conf` [ RunTime:0.062500s ]
+[ sql ] [ SQL ] SELECT `ename`,`value` FROM `tp_conf` [ RunTime:0.015625s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.031250s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_ad` [ RunTime:0.062500s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tp_ad` WHERE  `ad_name` = '轮播图'  AND `id` <> 76 LIMIT 1 [ RunTime:0.015625s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_adflash` [ RunTime:0.078125s ]
+[ sql ] [ SQL ] INSERT INTO `tp_adflash` (`ad_id` , `fimg_src` , `flink`) VALUES (76 , '20180815\\3a733aeb65c2e9bf9cc5ec1d0ec0b0a2.jpg' , '') [ RunTime:0.156250s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] INSERT INTO `tp_adflash` (`ad_id` , `fimg_src` , `flink`) VALUES (76 , '20180815\\4ad1df4df5837abde8eccc467b22feb1.jpg' , '') [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] UPDATE `tp_adflash`  SET `flink`=''  WHERE  `id` = 85 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] UPDATE `tp_adflash`  SET `flink`=''  WHERE  `id` = 76 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] UPDATE `tp_ad`  SET `type`=2,`adpos_id`=8,`ad_name`='轮播图',`on`=1,`link`=''  WHERE  `id` = 76 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-08-15T15:43:22+08:00 ] 0.0.0.0 115.62.121.128 GET /public/index.php/admin/ad/lst.html
+[ log ] jituan.zhichengsheji.cn/public/index.php/admin/ad/lst.html [运行时间：0.546875s][吞吐率：1.83req/s] [内存消耗：2,093.79kb] [文件加载：58]
+[ info ] [ LANG ] D:\web\jituan\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ad',
+    2 => 'lst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.101 Safari/537.36',
+  'referer' => 'http://jituan.zhichengsheji.cn/public/index.php/admin/ad/edit/id/76.html',
+  'host' => 'jituan.zhichengsheji.cn',
+  'cookie' => 'safedog-flow-item=; PHPSESSID=sldt6fn42ka3qdo3iv6d15gvv0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'content-length' => '0',
+  'connection' => 'keep-alive',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Ad->lst[ D:\web\jituan\application\admin\controller\Ad.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\web\jituan\public/../application/admin\view\ad\list.htm [ array (
+  0 => 'con',
+  1 => 'name',
+  2 => 'adRes',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_conf` [ RunTime:0.046875s ]
+[ sql ] [ SQL ] SELECT `ename`,`value` FROM `tp_conf` [ RunTime:0.031250s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_ad` [ RunTime:0.093750s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_ad` `a` INNER JOIN `tp_adpos` `b` ON `a`.`adpos_id`=`b`.`id` LIMIT 1 [ RunTime:0.031250s ]
+[ sql ] [ SQL ] SELECT `a`.*,`b`.`name` FROM `tp_ad` `a` INNER JOIN `tp_adpos` `b` ON `a`.`adpos_id`=`b`.`id` LIMIT 0,6 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-08-15T15:43:27+08:00 ] 0.0.0.0 115.62.121.128 GET /public/index.php/admin/ad/edit/id/77.html
+[ log ] jituan.zhichengsheji.cn/public/index.php/admin/ad/edit/id/77.html [运行时间：0.703125s][吞吐率：1.42req/s] [内存消耗：2,048.83kb] [文件加载：55]
+[ info ] [ LANG ] D:\web\jituan\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ad',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.101 Safari/537.36',
+  'referer' => 'http://jituan.zhichengsheji.cn/public/index.php/admin/ad/lst.html',
+  'host' => 'jituan.zhichengsheji.cn',
+  'cookie' => 'safedog-flow-item=; PHPSESSID=sldt6fn42ka3qdo3iv6d15gvv0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'content-length' => '0',
+  'connection' => 'keep-alive',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '77',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Ad->edit[ D:\web\jituan\application\admin\controller\Ad.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\web\jituan\public/../application/admin\view\ad\edit.htm [ array (
+  0 => 'con',
+  1 => 'name',
+  2 => 'adflashRes',
+  3 => 'ad',
+  4 => 'adposRes',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_conf` [ RunTime:0.046875s ]
+[ sql ] [ SQL ] SELECT `ename`,`value` FROM `tp_conf` [ RunTime:0.015625s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_adpos` [ RunTime:0.078125s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `tp_adpos` [ RunTime:0.015625s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_ad` [ RunTime:0.046875s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_ad` WHERE  `id` = 77 LIMIT 1 [ RunTime:0.015625s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_adflash` [ RunTime:0.078125s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_adflash` WHERE  `ad_id` = 77 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-08-15T15:43:34+08:00 ] 0.0.0.0 115.62.121.128 POST /public/index.php/admin/ad/ajaxdel.html
+[ log ] jituan.zhichengsheji.cn/public/index.php/admin/ad/ajaxdel.html [运行时间：0.468750s][吞吐率：2.13req/s] [内存消耗：2,003.78kb] [文件加载：55]
+[ info ] [ LANG ] D:\web\jituan\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ad',
+    2 => 'ajaxdel',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://jituan.zhichengsheji.cn',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.101 Safari/537.36',
+  'referer' => 'http://jituan.zhichengsheji.cn/public/index.php/admin/ad/edit/id/77.html',
+  'host' => 'jituan.zhichengsheji.cn',
+  'cookie' => 'safedog-flow-item=; PHPSESSID=sldt6fn42ka3qdo3iv6d15gvv0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'content-length' => '5',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'id' => '91',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Ad->ajaxdel[ D:\web\jituan\application\admin\controller\Ad.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_conf` [ RunTime:0.046875s ]
+[ sql ] [ SQL ] SELECT `ename`,`value` FROM `tp_conf` [ RunTime:0.015625s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_adflash` [ RunTime:0.046875s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_adflash` WHERE  `id` = 91 LIMIT 1 [ RunTime:0.015625s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] DELETE FROM `tp_adflash`    WHERE  `id` = 91 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-08-15T15:43:39+08:00 ] 0.0.0.0 115.62.121.128 POST /public/index.php/admin/ad/ajaxdel.html
+[ log ] jituan.zhichengsheji.cn/public/index.php/admin/ad/ajaxdel.html [运行时间：0.578125s][吞吐率：1.73req/s] [内存消耗：2,003.78kb] [文件加载：55]
+[ info ] [ LANG ] D:\web\jituan\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ad',
+    2 => 'ajaxdel',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://jituan.zhichengsheji.cn',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.101 Safari/537.36',
+  'referer' => 'http://jituan.zhichengsheji.cn/public/index.php/admin/ad/edit/id/77.html',
+  'host' => 'jituan.zhichengsheji.cn',
+  'cookie' => 'safedog-flow-item=; PHPSESSID=sldt6fn42ka3qdo3iv6d15gvv0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'content-length' => '5',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'id' => '92',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Ad->ajaxdel[ D:\web\jituan\application\admin\controller\Ad.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_conf` [ RunTime:0.031250s ]
+[ sql ] [ SQL ] SELECT `ename`,`value` FROM `tp_conf` [ RunTime:0.031250s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_adflash` [ RunTime:0.062500s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_adflash` WHERE  `id` = 92 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.031250s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] DELETE FROM `tp_adflash`    WHERE  `id` = 92 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-08-15T15:44:14+08:00 ] 0.0.0.0 115.62.121.128 POST /public/index.php/admin/ad/edit/id/77.html
+[ log ] jituan.zhichengsheji.cn/public/index.php/admin/ad/edit/id/77.html [运行时间：0.703125s][吞吐率：1.42req/s] [内存消耗：2,434.25kb] [文件加载：62]
+[ info ] [ LANG ] D:\web\jituan\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ad',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://jituan.zhichengsheji.cn',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.101 Safari/537.36',
+  'referer' => 'http://jituan.zhichengsheji.cn/public/index.php/admin/ad/edit/id/77.html',
+  'host' => 'jituan.zhichengsheji.cn',
+  'cookie' => 'safedog-flow-item=; PHPSESSID=sldt6fn42ka3qdo3iv6d15gvv0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryNlUeoE1DAY1hFmBz',
+  'content-length' => '8520',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+  'id' => '77',
+  'oldimgsrc' => '',
+  'type' => '2',
+  'adpos_id' => '10',
+  'ad_name' => '首页轮播缩略图',
+  'on' => '1',
+  'link' => '',
+  'old_flink' => 
+  array (
+    81 => '',
+    83 => '',
+    88 => '',
+  ),
+  'flink' => 
+  array (
+    0 => '',
+  ),
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Ad->edit[ D:\web\jituan\application\admin\controller\Ad.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\web\jituan\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'con',
+  1 => 'name',
+  2 => 'code',
+  3 => 'msg',
+  4 => 'data',
+  5 => 'url',
+  6 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_conf` [ RunTime:0.046875s ]
+[ sql ] [ SQL ] SELECT `ename`,`value` FROM `tp_conf` [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_ad` [ RunTime:0.062500s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tp_ad` WHERE  `ad_name` = '首页轮播缩略图'  AND `id` <> 77 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_adflash` [ RunTime:0.062500s ]
+[ sql ] [ SQL ] INSERT INTO `tp_adflash` (`ad_id` , `fimg_src` , `flink`) VALUES (77 , '20180815\\66866abe14f26ad9b7b58d21895e4172.jpg' , '') [ RunTime:0.015625s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] UPDATE `tp_adflash`  SET `flink`=''  WHERE  `id` = 81 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] UPDATE `tp_adflash`  SET `flink`=''  WHERE  `id` = 83 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] UPDATE `tp_adflash`  SET `flink`=''  WHERE  `id` = 88 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] UPDATE `tp_ad`  SET `type`=2,`adpos_id`=10,`ad_name`='首页轮播缩略图',`on`=1,`link`=''  WHERE  `id` = 77 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-08-15T15:44:18+08:00 ] 0.0.0.0 115.62.121.128 GET /public/index.php/admin/ad/lst.html
+[ log ] jituan.zhichengsheji.cn/public/index.php/admin/ad/lst.html [运行时间：0.765625s][吞吐率：1.31req/s] [内存消耗：2,093.79kb] [文件加载：58]
+[ info ] [ LANG ] D:\web\jituan\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ad',
+    2 => 'lst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.101 Safari/537.36',
+  'referer' => 'http://jituan.zhichengsheji.cn/public/index.php/admin/ad/edit/id/77.html',
+  'host' => 'jituan.zhichengsheji.cn',
+  'cookie' => 'safedog-flow-item=; PHPSESSID=sldt6fn42ka3qdo3iv6d15gvv0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'content-length' => '0',
+  'connection' => 'keep-alive',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Ad->lst[ D:\web\jituan\application\admin\controller\Ad.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\web\jituan\public/../application/admin\view\ad\list.htm [ array (
+  0 => 'con',
+  1 => 'name',
+  2 => 'adRes',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_conf` [ RunTime:0.265625s ]
+[ sql ] [ SQL ] SELECT `ename`,`value` FROM `tp_conf` [ RunTime:0.031250s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_ad` [ RunTime:0.062500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_ad` `a` INNER JOIN `tp_adpos` `b` ON `a`.`adpos_id`=`b`.`id` LIMIT 1 [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `a`.*,`b`.`name` FROM `tp_ad` `a` INNER JOIN `tp_adpos` `b` ON `a`.`adpos_id`=`b`.`id` LIMIT 0,6 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-08-15T15:44:29+08:00 ] 0.0.0.0 115.62.121.128 GET /public/index.php
+[ log ] jituan.zhichengsheji.cn/public/index.php [运行时间：1.125000s][吞吐率：0.89req/s] [内存消耗：3,023.42kb] [文件加载：56]
+[ info ] [ LANG ] D:\web\jituan\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.101 Safari/537.36',
+  'host' => 'jituan.zhichengsheji.cn',
+  'cookie' => 'safedog-flow-item=; PHPSESSID=sldt6fn42ka3qdo3iv6d15gvv0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'content-length' => '0',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\web\jituan\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ../template/default/index.htm [ array (
+  0 => 'temp',
+  1 => 'temp_src',
+  2 => 'cateRes',
+  3 => 'botCateRes',
+  4 => 'confs',
+  5 => 'topcid',
+  6 => 'about',
+  7 => 'service',
+  8 => 'news',
+  9 => 'proRes',
+  10 => 'adStr',
+  11 => 'img_Res',
+  12 => 'xinwen',
+  13 => 'jiaoyu',
+  14 => 'jituan_cates',
+  15 => 'jituan_abouts',
+) ]
+[ info ] [ VIEW ] ../template/default/index.htm [ array (
+  0 => 'temp',
+  1 => 'temp_src',
+  2 => 'cateRes',
+  3 => 'botCateRes',
+  4 => 'confs',
+  5 => 'topcid',
+  6 => 'about',
+  7 => 'service',
+  8 => 'news',
+  9 => 'proRes',
+  10 => 'adStr',
+  11 => 'img_Res',
+  12 => 'xinwen',
+  13 => 'jiaoyu',
+  14 => 'jituan_cates',
+  15 => 'jituan_abouts',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_conf` [ RunTime:0.062500s ]
+[ sql ] [ SQL ] SELECT `value` FROM `tp_conf` WHERE  `ename` = 'temp' LIMIT 1 [ RunTime:0.015625s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.031250s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_cate` [ RunTime:0.062500s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 0  AND `status` = 1 ORDER BY sort desc [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.031250s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 1  AND `status` = 1 ORDER BY sort desc [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 5  AND `status` = 1 ORDER BY sort desc [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 8  AND `status` = 1 ORDER BY sort desc [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 13  AND `status` = 1 ORDER BY sort desc [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 0  AND `status` = 1  AND `bottom_nav` = 1 [ RunTime:0.015625s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.031250s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 1  AND `status` = 1 ORDER BY sort desc [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT `ename`,`value` FROM `tp_conf` [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_archives` [ RunTime:0.062500s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_archives` WHERE  `cate_id` IN (5,6,7) ORDER BY time desc [ RunTime:0.015625s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_archives` WHERE  `cate_id` = 11 ORDER BY id desc [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `id` = 20 ORDER BY id desc [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT `content` FROM `tp_cate` WHERE  `id` = 8 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_archives` WHERE  `cate_id` = 5 ORDER BY id desc LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_archives` WHERE  `cate_id` IN (0,9,10) ORDER BY click desc LIMIT 10 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_ad` [ RunTime:0.046875s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_ad` WHERE  `adpos_id` IN (8,10)  AND `on` = 1 [ RunTime:0.015625s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_adflash` [ RunTime:0.078125s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_adflash` WHERE  `ad_id` = 76 [ RunTime:0.015625s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_adflash` WHERE  `ad_id` = 77 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 8 ORDER BY sort desc [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jituan;host=localhost;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 1 ORDER BY sort desc [ RunTime:0.000000s ]
+
+---------------------------------------------------------------

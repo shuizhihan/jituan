@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+<!-- Bootstrap -->
+<link href="/template/default/skin/css/bootstrap.min.css" rel="stylesheet">
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="/skin/js/html5shiv.min.js"></script>
+      <script src="/skin/js/respond.min.js"></script>
+    <![endif]-->
+<link href="/template/default/skin/css/style.css" rel="stylesheet">
+<title>搜索页</title>
+<meta name="keywords" content="{$topCates.keywords}" />
+<meta name="description" content="{$topCates.desc}" />
+<meta name="robots" content="All">
+<link rel="shortcut icon" href="/favicon.ico">
+</head>
+<body>
+{include file="/default/head"}
+{include file="/default/banner"}
+<div class="container ">
+  <div class="company_list1">
+    {if condition="count($artRes) == 0"}
+    <div style="text-align: center;">没有查询到相关内容</div>
+    
+    {/if} 
+     {volist name="artRes" id="vo"} 
+    <a href="{:url('Article/index',array('aid'=>$vo['id']))}">
+    <div class="item">
+      <div class="tt">{$vo.title}</div>
+      {$vo.description}</div>
+    </a> {/volist}
+  </div>
+  <div class="clearfix"></div>
+  <div class="pages">
+    <div id="AspNetPager1" class="paginator"> {$artRes->render()}</div>
+  </div>
+</div>
+{include file="/default/footer"} 
+<script src="/template/default/skin/js/jquery-1.11.3.min.js" type="text/javascript"></script> 
+<script src="/template/default/skin/js/bootstrap.min.js"></script> 
+<script src="/template/default/skin/js/common.js" type="text/javascript"></script>
+</body>
+</html>

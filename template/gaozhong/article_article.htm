@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="{dede:global.cfg_soft_lang/}">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+<!-- Bootstrap -->
+<link href="/template/default/skin/css/bootstrap.min.css" rel="stylesheet">
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="/skin/js/html5shiv.min.js"></script>
+      <script src="/skin/js/respond.min.js"></script>
+    <![endif]-->
+<link href="/template/default/skin/css/style.css" rel="stylesheet">
+<meta name="author" content="order by dede58.com/" />
+<title>{$arts.title}</title>
+<meta name="keywords" content="{$arts.keywords}" />
+<meta name="description" content="{$arts.description}" />
+<meta name="robots" content="All">
+<link rel="shortcut icon" href="/favicon.ico">
+</head>
+<body >
+{include file="/default/head"}
+{include file="/default/banner"}
+<div class="ab_content">
+  <div class="container ">
+    <div class="note_content">
+      <h1 class="title">{$arts.title}</h1>
+      <div class="date">发布日期：{$arts.time|date="Y-m-d",###}&emsp;&emsp;来源：{$arts.source}</div>
+      {$arts.content}
+      <div class="clearfix"></div>
+      <div class="clearfix"></div>
+      <div class="xia">
+        <div class="row">
+          <div class="col-xs-12 col-md-8">
+            
+
+            {if condition="$pre_info != ''"}
+            <p>
+                <a href="{:url('Article/index',array('aid'=>$pre_info.id))}" title="{$pre_info.title}" class="ellipsis">上一篇：{$pre_info.title}</a>
+            </p>
+            {else /}
+            <p>
+                <a href="#">上一篇：没有了</a>
+            </p>
+            {/if}
+ 
+            {if condition="$next_info != ''"}
+            <p>
+                <a href="{:url('Article/index',array('aid'=>$next_info.id))}" title="$next_info.title" class="ellipsis">下一篇：{$next_info.title}</a>
+            </p>
+            {else /}
+            <p>
+                <a href="#">下一篇：没有了</a>
+            </p>
+            {/if}
+          </div>
+          <div class="col-xs-12 col-md-4 hidden-xs hidden-sm" >
+            <div class="fp1 bdsharebuttonbox" data-tag="share_1" style=" float:right;padding-top:0PX;height:28px;padding-left:10px;"> <a class="bds_sqq" data-cmd="sqq" href="#" style="width:32px;height:32px;margin:0 0 0 6px;  background: url(/template/default/skin/img/qq.png) no-repeat;"></a> <a class="bds_weixin" data-cmd="weixin" href="#" style="width:32px;height:32px;margin:0 0 0 6px;  background: url(/template/default/skin/img/wx.png) no-repeat;"></a> <a class="bds_tsina" data-cmd="tsina" href="#" style="width:32px;height:32px;margin:0 0 0 6px;  background: url(/template/default/skin/img/wb.png) no-repeat;"></a> </div>
+            <script>    window._bd_share_config = { "common": { "bdSnsKey": {}, "bdText": "", "bdMini": "2", "bdPic": "", "bdStyle": "0", "bdSize": "32" }, "share": {} }; with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];
+			</script></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="xg_new">
+  <div class="container">
+    <div class="tt">相关新闻</div>
+    <div class="row clearifx">
+      <div class="col-xs-12 col-sm-4">
+        <ul>
+         {volist name="xiangguan" id="vo" offset="0" length="4"}    
+          <li><a href="{:url('Article/index',array('aid'=>$vo.id))}">{$vo.title}</a></li>
+         {/volist} 
+        </ul>
+      </div>
+     <div class="col-xs-12 col-sm-4">
+        <ul>
+         {volist name="xiangguan" id="vo" offset="4" length="4"}    
+          <li><a href="{:url('Article/index',array('aid'=>$vo.id))}">{$vo.title}</a></li>
+         {/volist} 
+        </ul>
+      </div>
+      <div class="col-xs-12 col-sm-4">
+        <ul>
+         {volist name="xiangguan" id="vo" offset="8" length="4"}    
+          <li><a href="{:url('Article/index',array('aid'=>$vo.id))}">{$vo.title}</a></li>
+         {/volist} 
+        </ul>
+      </div>
+  
+    </div>
+  </div>
+</div>
+{include file="/default/footer"}
+<script src="/template/default/skin/js/jquery-1.11.3.min.js" type="text/javascript"></script> 
+<script src="/template/default/skin/js/bootstrap.min.js"></script> 
+<script src="/template/default/skin/js/common.js" type="text/javascript"></script>
+</body>
+</html>

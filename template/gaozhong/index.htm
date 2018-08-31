@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="{dede:global.cfg_soft_lang/}">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+<!-- Bootstrap -->
+<link href="/template/default/skin/css/bootstrap.min.css" rel="stylesheet">
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="/skin/js/html5shiv.min.js"></script>
+      <script src="/skin/js/respond.min.js"></script>
+    <![endif]-->
+<link href="/template/default/skin/css/style.css" rel="stylesheet">
+<meta name="author" content="order by dede58.com/" />
+<title>{$confs.sitename}</title>
+<meta name="description" content="{$confs.desc}" />
+<meta name="keywords" content="{$confs.keywords}" />
+<meta name="robots" content="All">
+<link rel="shortcut icon" href="/favicon.ico">
+</head>
+<body>
+{include file="/default/head"}
+<div class="banner">
+  <div id="focus1" class="focus">
+    <div class="hd">
+      <ul>
+      </ul>
+    </div>
+    <div class="bd">
+      <ul>
+      {volist name ="imgRes" id = "vo"}
+        <li><a style=" background-image:url(__INDEX__/ad/{$vo.fimg_src});" href="javascript:void(0);"
+             title="">&nbsp;</a></li>
+      
+      
+      {/volist}
+        
+      </ul>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+</div>
+<!-- 新闻中心 单条新闻-->
+{volist name="redian" id="vo" offset="0" length="1"}
+<div class="indexpd index1">
+  <div class="container ">
+    <div class="index_title"><a href="{:url('Cate/index',array('cid'=>5))}">
+      <p>最新动态</p>
+      </a> <a href="{:url('Cate/index',array('cid'=>5))}" class="index_more">查看全部</a> </div>
+   
+    <div class="index_news">
+      <div class="row clearfix">
+        <div class="col-xs-12 col-md-6 slideLeft"> <img src="__INDEX__/uploads/img/{$vo.litpic}" alt="{$vo.title}" class="center-block img-responsive" width="100%"/> </div>
+        <div class="col-xs-12 col-md-6 slideRight">
+          <div class="con">
+            <div class="tt ellipsis">{$vo.title}</div>
+            <div class="p">{$vo.description}</div>
+            <a href="{:url('Article/index',array('aid'=>$vo['id']))}" class="red_btn">查看详情 +</a> </div>
+        </div>
+      </div>
+    </div>
+    <!-- 单条新闻结束  -->
+    <div class="index_news_four index2">
+      <div class="row clearfix">
+      <!-- 四条新闻开始 --> 
+      {volist name ="redian" id="vo_son" offset="1" length="4"}
+        <div class="col-xs-12 col-md-3"><a href="{:url('Article/index',array('aid'=>$vo_son['id']))}">
+          <div class="row clearfix">
+            <div class="col-xs-2 col-md-3 date">
+              <h1>{$vo_son.time|date="d",###}</h1>
+              <p>{$vo_son.time|date="Y-m",###}</p>
+            </div>
+            <div class="col-xs-10 col-md-9">
+              <div class="tt towLine">{$vo_son.title}</div>
+              <p class="threeLine">{$vo_son.keywords|mb_substr=0,120,'utf-8'}</p>
+              <span class="red">详情>></span> </div>
+          </div>
+          </a> </div>
+          {/volist}
+        <!-- 四条新闻结束 --> 
+      </div>
+    </div>
+  </div>
+</div>
+ {/volist}
+<!-- 教育教学开始 -->
+{volist name ="jiaoyu" id="vo" offset="0" length="1"}
+<div class="indexpd indexGrey index3">
+  <div class="container">
+    <div class="index_title"><a href="{:url('Cate/index',array('cid'=>11))}">
+      <p>教育教学</p>
+      </a> <a href="{:url('Cate/index',array('cid'=>11))}" class="index_more">查看全部</a> </div>
+    <div class="index_jiegou">
+      <div class="row clearfix">
+        <div class="col-xs-12 col-md-4">
+        <!-- 两条关于教育教学开始 -->
+        {volist name="jiaoyu" id="vo_one" offset="0" length="1"}  
+          <div class="item right"> <a href="{:url('Article/index',array('aid'=>$vo_one['id']))}"> <img src="__INDEX__/uploads/img/{$vo_one.litpic}" class="img">
+            <div class="abs"><span class="tt">{$vo_one.title}</span>
+              <div class="note">
+                <p class="fourLine">{$vo_one.description}</p>
+                <img src="/template/default/skin/img/icon3.png" class="more"></div>
+            </div>
+            </a> 
+          </div>
+          {/volist}
+          {volist name="jiaoyu" id="vo_two" offset="1" length="1"}  
+          <div class="item"> <a href="{:url('Article/index',array('aid'=>$vo_two['id']))}"> <img src="__INDEX__/uploads/img/{$vo_two.litpic}" class="img">
+            <div class="abs"><span class="tt">{$vo_two.title}</span>
+              <div class="note">
+                <p class="fourLine">{$vo_two.description}</p>
+                <img src="/template/default/skin/img/icon3.png" class="more"></div>
+            </div>
+            </a> 
+          </div>
+          {/volist}
+          <!-- 两条关于教育教学结束 --> 
+        </div>
+        <div class="col-xs-12 col-md-4">
+       <!-- 一条关于教育教学开始 -->   
+          {volist name="jiaoyu" id="vo_three" offset="2" length="1"}  
+          <div class="item long"> <a href="{:url('Article/index',array('aid'=>$vo_three['id']))}"> <img src="__INDEX__/uploads/img/{$vo_three.litpic}" class="img">
+            <div class="abs"><span class="tt">{$vo_three.title}</span>
+              <div class="note">
+                <p class="fourLine">{$vo_three.description}</p>
+                <img src="/template/default/skin/img/icon3.png" class="more"></div>
+            </div>
+            </a> 
+          </div>
+          {/volist}
+         <!-- 一条关于教育教学结束 -->   
+        </div>
+        <div class="col-xs-12 col-md-4">
+          <!-- 两条开始 -->    
+         {volist name="jiaoyu" id="vo_four" offset="3" length="1"}  
+          <div class="item"> <a href="{:url('Article/index',array('aid'=>$vo_four['id']))}"> <img src="__INDEX__/uploads/img/{$vo_four.litpic}" class="img">
+            <div class="abs"><span class="tt">{$vo_four.title}</span>
+              <div class="note">
+                <p class="fourLine">{$vo_four.description}</p>
+                <img src="/template/default/skin/img/icon3.png" class="more"></div>
+            </div>
+            </a> 
+          </div>
+          {/volist}
+           {volist name="jiaoyu" id="vo_five" offset="4" length="1"}  
+          <div class="item"> <a href="{:url('Article/index',array('aid'=>$vo_five['id']))}"> <img src="__INDEX__/uploads/img/{$vo_five.litpic}" class="img">
+            <div class="abs"><span class="tt">{$vo_five.title}</span>
+              <div class="note">
+                <p class="fourLine">{$vo_five.description}</p>
+                <img src="/template/default/skin/img/icon3.png" class="more"></div>
+            </div>
+            </a> 
+          </div>
+          {/volist}
+          <!-- 两条结束   -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{/volist}
+<!-- 教育教学结束 -->
+<!-- 集团介绍开始 -->
+{volist name="about" id="vo"}
+<div class="indexpd index4">
+  <div class="container ">
+    <div class="index_title"><a href="{:url('Page/index',array('cid'=>1))}">
+      <p>关于我们</p>
+      </a> <a href="{:url('Page/index',array('cid'=>1))}" class="index_more">查看全部</a> </div>
+    <div class="index_news index_about">
+      <div class="row clearfix">
+        <div class="col-xs-12 col-md-4 slideLeft"> <img src="__ADMIN__/uploads/cateimg/{$vo.img}" class="center-block img-responsive img" /> </div>
+        <div class="col-xs-12 col-md-8 slideRight">
+          <div class="con">
+            <div class="tt ellipsis">{$vo.title}</div>
+            <div class="p">{$vo.desc}</div>
+            <a href="{:url('Page/index',array('cid'=>1))}" class="red_btn">查看详情 +</a> </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{/volist}
+<!-- 集团介绍结束 -->
+<div class="indexpd indexGrey index5"><!-- 友情链接 -->
+  <div class="container ">
+    <div class="index_title"><a>
+      <p>友情链接</p>
+      </a> </div>
+    <div class="index_links">
+      <div class="row clearfix">
+        <!-- 友情链接遍历开始 -->  
+        <div class="col-xs-4 col-md-2" style="opacity: 1; display: block; transform: translateY(0px);"><a href="" target="_blank"><img src="__INDEX__/uploads/link/link.png" width="88" height="31" border="0"></a>   </div>
+        <div class="col-xs-4 col-md-2" style="opacity: 1; display: block; transform: translateY(0px);"><a href="" target="_blank"><img src="__INDEX__/uploads/link/link.png" width="88" height="31" border="0"></a>   </div>
+        <div class="col-xs-4 col-md-2" style="opacity: 1; display: block; transform: translateY(0px);"><a href="" target="_blank"><img src="__INDEX__/uploads/link/link.png" width="88" height="31" border="0"></a>   </div>
+        <div class="col-xs-4 col-md-2" style="opacity: 1; display: block; transform: translateY(0px);"><a href="" target="_blank"><img src="__INDEX__/uploads/link/link.png" width="88" height="31" border="0"></a>   </div>
+        <div class="col-xs-4 col-md-2" style="opacity: 1; display: block; transform: translateY(0px);"><a href="" target="_blank"><img src="__INDEX__/uploads/link/link.png" width="88" height="31" border="0"></a>   </div>
+        <div class="col-xs-4 col-md-2" style="opacity: 1; display: block; transform: translateY(0px);"><a href="" target="_blank"><img src="__INDEX__/uploads/link/link.png" width="88" height="31" border="0"></a>   </div>
+        <!-- 友情链接遍历结束 -->
+      </div>
+    </div>
+  </div>
+</div>
+{include file="/default/footer"}
+<script src="/template/default/skin/js/jquery-1.11.3.min.js" type="text/javascript"></script> 
+<script src="/template/default/skin/js/bootstrap.min.js"></script> 
+<script src="/template/default/skin/js/common.js" type="text/javascript"></script> 
+<script src="/template/default/skin/js/touchslide.1.1.js" type="text/javascript"></script> 
+<script src="/template/default/skin/js/velocity.min.js" type="text/javascript"></script> 
+<script src="/template/default/skin/js/velocity.ui.js" type="text/javascript"></script> 
+<script>
+              $(function () {
+                  TouchSlide({
+                      slideCell: "#focus1",
+                      titCell: ".hd ul",
+                      mainCell: ".bd ul",
+                      effect: "leftLoop",
+                      interTime: 5000,
+                      autoPlay: true,
+                      autoPage: true,
+                  });
+
+                  var scrollPos = $(window).scrollTop() + $(window).height() - 100;
+                  if (!$(".index1").hasClass('animated') && scrollPos > $(".index1").offset().top) {
+                      $(".index1").addClass('animated');
+                      $(".index1 .index_title").velocity('transition.slideUpBigIn', { duration: 1000 });
+                      $(".index1 .slideLeft").velocity('transition.slideLeftBigIn', { delay: 300, duration: 1000, stagger: 300 });
+                      $(".index1 .slideRight").velocity('transition.slideRightBigIn', { delay: 600, duration: 1000, stagger: 300 });
+                  }
+                  //页面滚动
+                  $(window).scroll(function () {
+                      var scrollPos = $(window).scrollTop() + $(window).height() - 100;
+                      //动画
+                      if (!$(".index1").hasClass('animated') && scrollPos > $(".index1").offset().top) {
+                          $(".index1").addClass('animated');
+                          $(".index1 .index_title").velocity('transition.slideUpBigIn', { duration: 1000 });
+                          $(".index1 .slideLeft").velocity('transition.slideLeftBigIn', { delay: 300, duration: 1000, stagger: 300 });
+                          $(".index1 .slideRight").velocity('transition.slideRightBigIn', { delay: 600, duration: 1000, stagger: 300 });
+                      }
+                      if (!$(".index2").hasClass('animated') && scrollPos > $(".index2").offset().top) {
+                          $(".index2").addClass('animated');
+                          $(".index2 .index_title").velocity('transition.slideUpBigIn', { duration: 1000 });
+                          $(".index2 .col-xs-12").velocity('transition.slideUpBigIn', { delay: 300, stagger: 300 });
+
+                      }
+
+                      if (!$(".index3").hasClass('animated') && scrollPos > $(".index3").offset().top) {
+                          $(".index3").addClass('animated');
+                          $(".index3 .index_title").velocity('transition.slideUpBigIn', { duration: 1000 });
+                          $(".index3 .item").velocity('transition.slideUpBigIn', { delay: 300, stagger: 300 });
+                      }
+                      if (!$(".index4").hasClass('animated') && scrollPos > $(".index4").offset().top) {
+                          $(".index4").addClass('animated');
+                          $(".index4 .index_title").velocity('transition.slideUpBigIn', { duration: 1000 });
+                          $(".index4 .slideLeft").velocity('transition.slideLeftBigIn', { delay: 300, duration: 1000, stagger: 300 });
+                          $(".index4 .slideRight").velocity('transition.slideRightBigIn', { delay: 600, duration: 1000, stagger: 300 });
+                      }
+                      if (!$(".index5").hasClass('animated') && scrollPos > $(".index5").offset().top) {
+                          $(".index5").addClass('animated');
+                          $(".index5 .index_title").velocity('transition.slideUpBigIn', { duration: 1000 });
+                          $(".index5 .col-xs-4").velocity('transition.slideUpBigIn', { delay: 300, stagger: 300 });
+                      }
+                  });
+              });
+          </script>
+</body>
+</html>

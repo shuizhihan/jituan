@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta name="renderer" content="webkit">
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+<meta name="generator" data-variable="3,,3"/>
+<title>{$topCates.cate_name}</title>
+<meta name="keywords" content="{dede:field name='keywords'/}" />
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+<link rel='stylesheet' href='/template/default/skin/css/style.css'>
+<meta name="robots" content="All">
+<link rel="shortcut icon" href="/public/favicon.ico">
+</head>
+<body class="met-navfixed">
+<!-- <div class="load-box"></div> -->
+<!--[if lte IE 8]>
+	<div class="text-center padding-top-50 padding-bottom-50 bg-blue-grey-100">
+	<p class="browserupgrade font-size-18">你正在使用一个<strong>过时</strong>的浏览器。请<a href="http://browsehappy.com/" target="_blank">升级您的浏览器</a>，以提高您的体验。</p>
+	</div>
+<![endif]--> 
+{include file="/default/head"}
+<div class="banner-box">
+  <div class="met-banner banner-ny-h" data-height='' style='background-color:#023894;'>
+    <div class="slick-slide"> <img class="cover-image" src="/template/default/skin/images/product.jpg" srcset='/template/default/skin/images/product.jpg' data-page-img='/template/default/skin/images/product.jpg' sizes="(max-width: 767px) 767px" alt="{$topCates.cate_name}"> </div>
+  </div>
+</div>
+{volist name="sonCateRes" id="scate"} 
+<div class="met-product-class">
+  <div class="class-text padding-box">
+    <div class="class-desc">
+      <h1><a href="{if condition="$scate['cate_attr'] eq 1"}{:url('Cate/index',array('cid'=>$scate['id']))}{/if}
+              {if condition="$scate['cate_attr'] eq 2"}{:url('Page/index',array('cid'=>$scate['id']))}{/if}
+              {if condition="$scate['cate_attr'] eq 3"}{$scate.link}{/if}" title="{$scate.cate_name}" >{$scate.cate_name}</a></h1>
+      <p >{$scate.desc}...</p>
+      <a href="{if condition="$scate['cate_attr'] eq 1"}{:url('Cate/index',array('cid'=>$scate['id']))}{/if}
+              {if condition="$scate['cate_attr'] eq 2"}{:url('Page/index',array('cid'=>$scate['id']))}{/if}
+              {if condition="$scate['cate_attr'] eq 3"}{$scate.link}{/if}" title="{$scate.cate_name}" >点击进入&gt;</a> </div>
+  </div>
+  <div class="class-image" style="background-image:url(__ADMIN__/uploads/cateimg/{:str_replace('\\\\', '\\/', $scate['img'])});"> <a href="{if condition="$scate['cate_attr'] eq 1"}{:url('Cate/index',array('cid'=>$scate['id']))}{/if}
+              {if condition="$scate['cate_attr'] eq 2"}{:url('Page/index',array('cid'=>$scate['id']))}{/if}
+              {if condition="$scate['cate_attr'] eq 3"}{$scate.link}{/if}" title="{$scate.cate_name}" >{$scate.cate_name}</a> </div>
+</div>
+{/volist} 
+{include file="/default/footer"}
+</body>
+</html>

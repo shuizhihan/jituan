@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="{dede:global.cfg_soft_lang/}">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+<!-- Bootstrap -->
+<link href="/template/default/skin/css/bootstrap.min.css" rel="stylesheet">
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="/skin/js/html5shiv.min.js"></script>
+      <script src="/skin/js/respond.min.js"></script>
+    <![endif]-->
+<link href="/template/default/skin/css/style.css" rel="stylesheet">
+<meta name="author" content="order by dede58.com/" />
+<title>{$topCates.title}</title>
+<meta name="keywords" content="{$topCates.keywords}" />
+<meta name="description" content="{$topCates.desc}" />
+<meta name="robots" content="All">
+<link rel="shortcut icon" href="/favicon.ico">
+</head>
+<body >
+<!--头部 start--> 
+
+{include file="/default/head"}
+{include file="/default/banner"}
+<div class="ab_content">
+  <div class="container ">
+    <div class="container jiegou">
+      <div class="row clearfix"> 
+        {volist name="artRes" id="art" }
+        <p></p>
+        <div class="col-xs-6 col-md-4">
+          <div class="item"> <a href="{:url('Article/index',array('aid'=>$art['id']))}"> <img src="__INDEX__/uploads/img/{$art.litpic}" class="img">
+            <div class="abs"><span class="tt">{$art.title}</span>
+              <div class="note">
+                <p class="fourLine">{$art.description|mb_substr=0,220,'utf-8'}</p>
+                <img src="/template/default/skin/img/icon3.png" class="more"> </div>
+            </div>
+            </a> </div>
+        </div>
+        {/volist} 
+      </div>
+    </div>
+    <div class="pages"> 
+      <div id="AspNetPager1" class="paginator"> 
+        {$artRes->render()}
+
+       </div>
+    </div>
+  </div>
+</div>
+{include file="/default/footer"} 
+<script src="/template/default/skin/js/jquery-1.11.3.min.js" type="text/javascript"></script> 
+<script src="/template/default/skin/js/bootstrap.min.js"></script> 
+<script src="/template/default/skin/js/common.js" type="text/javascript"></script>
+</body>
+</html>

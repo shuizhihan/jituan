@@ -1,0 +1,41 @@
+<div class="head_top" id="top">
+  <nav class="navbar nav-pills">
+    <div class="container clearfix">
+      <div class="navbar-header">
+        <div class="search_icon hidden-md hidden-lg"></div>
+        <div class="top_search hidden-md hidden-lg" id='search1'>
+         <form  name="formsearch" action="{:url('Cate/search')}" method="POST">
+          <input  type="text" value=""  placeholder="请输入关键词" class="sea" id="search-keyword" name="q" />
+          <input  type="submit" value="" class="btn"  />
+          <!-- <input  type="submit" value="" class="btn"  onclick="SearchGo1()"/> -->
+         </form> 
+        </div>
+        <button type="button" class="navbar-toggle collapsed" ></button>
+        <a class="navbar-brand" href="/"><img src="/public/static/admin/uploads/{$confs.logo}" /></a>
+        <div id="navbar" class="navbar-collapse collapse nav-bar-xs nav-bar-sm">
+          <div class="top_search">
+           <form  name="formsearch" action="{:url('Cate/search')}" method="POST">
+            <input  type="text" value=""  placeholder="请输入关键词" class="sea" id="search-keyword" name="q" />
+            <!-- <input  type="submit" value="" class="btn"  onclick="SearchGo()"/> -->
+            <input  type="submit" value="" class="btn"  />
+           </form> 
+          </div>
+          <div class="clearfix"></div>
+          <ul class="nav navbar-nav ">
+            
+            <li class=""> <a href="/">首页</a></li>
+            
+            {volist name="cateRes" id="cate"}
+            <li class=""> <a href="{if condition="$cate['cate_attr'] eq 1"}{:url('Cate/index',array('cid'=>$cate['id']))}{/if}
+    {if condition="$cate['cate_attr'] eq 2"}{:url('Page/index',array('cid'=>$cate['id']))}{/if}
+    {if condition="$cate['cate_attr'] eq 3"}{$cate.link}{/if}">{$cate.cate_name}</a></li>
+            {/volist}
+            
+             
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>

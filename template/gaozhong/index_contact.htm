@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+<!-- Bootstrap -->
+<link href="/template/default/skin/css/bootstrap.min.css" rel="stylesheet">
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="/skin/js/html5shiv.min.js"></script>
+      <script src="/skin/js/respond.min.js"></script>
+    <![endif]-->
+<link href="/template/default/skin/css/style.css" rel="stylesheet">
+<meta name="author" content="order by dzc/" />
+<title>{$cates.title}</title>
+<meta name="keywords" content="{$cates.keywords}" />
+<meta name="description" content="{$cates.desc}" />
+<meta name="robots" content="All">
+<link rel="shortcut icon" href="/favicon.ico">
+</head>
+<body >
+<!--头部 start-->
+
+{include file="default/head"}
+{include file="/default/banner"}
+<div class="ab_content">
+  <div class="container ">
+    <div class="note_content"> 
+      <!-- 联系我们 -->
+      <div class="row clearfix">
+        <div class="col-xs-12 col-md-7">  <script src="/template/default/skin/js/048c11927f4c4b8a8811578543381d58.js"></script> 
+          <div id='map' class="baidumap"></div>
+          <script>
+		var map2 = new BMap.Map("map");            // 创建Map实例
+		var point2 = new BMap.Point(113.879324,35.298871); // 创建点坐标
+		map2.centerAndZoom(point2,15);                 // 初始化地图,设置中心点坐标和地图级别。
+		map2.enableScrollWheelZoom();                 //启用滚轮放大缩小
+		map2.addControl(new BMap.NavigationControl());
+		map2.addControl(new BMap.ScaleControl());
+		map2.addControl(new BMap.OverviewMapControl());
+		var marker2 = new BMap.Marker(point2);
+		map2.addOverlay(marker2);
+		var infoWinOpts = {}
+		var infoWin = new BMap.InfoWindow(
+				"<div style='text-align:left;color:#1A6DAF;font-size: 14px;'><p></p><p>联系人：魏老师</p><p>电　话：13598435394</p><p>邮　箱：6517358232qq.com</p><p>地　址：卫滨区文化路61号（原老师专院内）</p></div>",infoWinOpts);
+		marker2.openInfoWindow(infoWin);
+		marker2.addEventListener("click", function(){this.openInfoWindow(infoWin);});
+	</script>  
+        </div>
+        <div class="col-xs-12 col-md-5">
+          <div class="contact">
+            <h3>
+              新誉佳高级中学</h3>
+            <p>
+              地址：新乡市卫滨区文化路61号（原老师专院内）</p>
+            <p>
+              电话：13598435394</p>
+            
+            <p>
+              邮编：453300</p>
+            <p>
+              邮箱：651735823@qq.com</p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{include file="/default/footer"}
+<script src="/template/default/skin/js/jquery-1.11.3.min.js" type="text/javascript"></script> 
+<script src="/template/default/skin/js/bootstrap.min.js"></script> 
+<script src="/template/default/skin/js/common.js" type="text/javascript"></script>
+</body>
+</html>

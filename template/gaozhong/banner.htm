@@ -1,0 +1,38 @@
+<div class="Sbanner" style="background-image:url(/template/default/skin/img/banner1.jpg)">
+  <div class="container valign relative">
+    <p>{$topCates.cate_name}</p>
+  </div>
+</div>
+<div class="ab_top">
+  <div class="container ">
+    <div class="row clearfix">
+      <div class="col-xs-12 col-md-8">
+        <div class="ab_type">
+          <ul>
+            
+            {volist name="sonCateRes" id="scate"}
+            <li ><a href="
+              {if condition="$scate['cate_attr'] eq 1"}{:url('Cate/index',array('cid'=>$scate['id']))}{/if}
+              {if condition="$scate['cate_attr'] eq 2"}{:url('Page/index',array('cid'=>$scate['id']))}{/if}
+              {if condition="$scate['cate_attr'] eq 3"}{$scate.link}{/if}
+              " {if condition="$scate['id'] eq $cid"} class="actived" {/if}>{$scate.cate_name}</a><i></i></li>
+          {/volist}
+             
+          </ul>
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-4 hidden-xs hidden-sm">
+        <div class="location">
+          <a href="{:url('Index/index')}">主页</a>
+          >
+          {volist name="pos" id="vo"}
+          <a href="{if condition="$vo['cate_attr'] eq 1"}{:url('Cate/index',array('cid'=>$vo['id']))}{/if}
+              {if condition="$vo['cate_attr'] eq 2"}{:url('Page/index',array('cid'=>$vo['id']))}{/if}
+              ">{$vo.cate_name}</a>
+          >
+          {/volist}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta name="renderer" content="webkit">
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+<meta name="generator" data-variable="2,,2"/>
+<title>{$topCates.cate_name}</title>
+<meta name="keywords" content="{$topCates.keywords}" />
+<meta name="description" content="{$topCates.desc}" />
+<link rel='stylesheet' href='/template/default/skin/css/style.css'>
+<meta name="robots" content="All">
+<link rel="shortcut icon" href="/public/favicon.ico">
+</head>
+<body class="met-navfixed">
+<!-- <div class="load-box"></div> -->
+<!--[if lte IE 8]>
+	<div class="text-center padding-top-50 padding-bottom-50 bg-blue-grey-100">
+	<p class="browserupgrade font-size-18">你正在使用一个<strong>过时</strong>的浏览器。请<a href="http://browsehappy.com/" target="_blank">升级您的浏览器</a>，以提高您的体验。</p>
+	</div>
+<![endif]--> 
+{include file="/default/head"}
+<div class="banner-box">
+  <div class="met-banner banner-ny-h" data-height='' style='background-color:#023894;'>
+    <div class="slick-slide"> <img class="cover-image" src="/template/defaultskin/images/news.jpg" srcset='/template/default/skin/images/news.jpg' data-page-img='/template/default/skin/images/news.jpg' sizes="(max-width: 767px) 767px" alt="{topCates.cate_name}"> </div>
+  </div>
+</div>
+<div class="met-column-nav">
+  <div class="container-fluid">
+    <div class="padding-box">
+      <div class="sidebar-tile">
+        <ul class="met-column-nav-ul invisible-xs">
+          {volist name="sonCateRes" id="scate"} 
+          <li class="margin-left-30"> <a href="{if condition="$scate['cate_attr'] eq 1"}{:url('Cate/index',array('cid'=>$scate['id']))}{/if}
+              {if condition="$scate['cate_attr'] eq 2"}{:url('Page/index',array('cid'=>$scate['id']))}{/if}
+              {if condition="$scate['cate_attr'] eq 3"}{$scate.link}{/if}" title="{$scate.cate_name}"  class="link{if condition="$scate['id'] eq $cid"} active {/if}">{$scate.cate_name}</a> </li>
+          {/volist}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<section class="met-news animsition ">
+  <div class="container-fluid">
+    <div class="met-page-ajax after" data-scale=''> 
+      {volist name="artRes" id="vo" offset="0" length="8" } 
+      <div class="col-lg-3 col-md-4 col-sm-6 padding-box">
+        <div class="info-list">
+          <div class="info-top"> <a class="tit" href="{:url('Article/index',array('aid'=>$vo['id']))}" title="{$vo.title}" target='_self'>{$vo.title}</a>
+            <p>{$vo.description|mb_substr=0,120,'utf-8'}...</p>
+            <i><b>{$vo.time|date="d",###}</b><u>{$vo.time|date="Y-m",###}</u></i> <a class="img lazyload" href="{:url('Article/index',array('aid'=>$vo['id']))}" title="{$vo.title}" data-original="__INDEX__/uploads/img/{:str_replace('\\\\', '\\/', $vo['litpic'])}" target='_self'></a> </div>
+          <div class="info-bottom"> <a href="{:url('Article/index',array('aid'=>$vo['id']))}" title="{$vo.title}" target='_self'>Read More</a> </div>
+        </div>
+      </div>
+      {/volist} 
+    </div>
+    <div class="hidden-xs">
+      <div class='met_pager'> {$artRes->render()} </div>
+    </div>
+    <div class="met-page-ajax-body visible-xs-block invisible" data-plugin="appear" data-animate="slide-bottom" data-repeat="false"> </div>
+  </div>
+</section>
+{include file="/default/footer"}
+</body>
+</html>
